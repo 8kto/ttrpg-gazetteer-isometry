@@ -1,0 +1,49 @@
+table {
+  @apply min-w-full;
+  @apply table-fixed;
+  @apply text-sm;
+  @apply text-left;
+  @apply mb-4;
+}
+
+table thead th:first-of-type,
+table tbody td:first-of-type {
+  @apply text-center;
+}
+
+table thead th {
+  @apply px-1;
+  @apply text-left text-base font-normal;
+  vertical-align: top;
+  break-inside: avoid;
+  word-break: keep-all;
+  background: var(--color-secondary-bg);
+  color: #5a3d2b;
+  font-family: var(--font-cursive);
+}
+
+table tr {
+  /*@apply border;*/
+}
+
+table thead tr {
+  border-color: #888;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: var(--color-light-bg);
+}
+
+table tbody td {
+  @apply px-1;
+  @apply py-1.5;
+  @apply text-left;
+  vertical-align: top;
+  break-inside: avoid;
+  word-break: keep-all;
+}
+
+.list-to-table--converted table thead th:first-of-type {
+  min-width: 32px;
+  white-space: nowrap;
+}

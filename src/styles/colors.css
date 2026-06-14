@@ -1,0 +1,117 @@
+/* Песочные и земляные тона */
+.sand-color {
+  color: #f5deb3;
+}
+
+.sand-bg {
+  background-color: #f5deb3;
+}
+
+.light-sand-color {
+  color: #eed5b7;
+}
+
+.light-sand-bg {
+  background-color: #eed5b7;
+}
+
+.warm-brown-color {
+  color: #c19a6b;
+}
+
+.warm-brown-bg {
+  background-color: #c19a6b;
+}
+
+.dark-sand-color {
+  color: #a68b6a;
+}
+
+.dark-sand-bg {
+  background-color: #a68b6a;
+}
+
+/* Золото и акценты */
+.gold-color {
+  color: #ffd700;
+}
+
+.gold-bg {
+  background-color: #ffd700;
+}
+
+.bronze-color {
+  color: #cd7f32;
+}
+
+.bronze-bg {
+  background-color: #cd7f32;
+}
+
+.copper-color {
+  color: #b87333;
+}
+
+.copper-bg {
+  background-color: #b87333;
+}
+
+/* Голубой и бирюзовый */
+.turquoise-color {
+  color: #40e0d0;
+}
+
+.turquoise-bg {
+  background-color: #40e0d0;
+}
+
+.azure-color {
+  color: #007fff;
+}
+
+.azure-bg {
+  background-color: #007fff;
+}
+
+/* Чёрный и серый */
+.black-color {
+  color: #0d0d0d;
+}
+
+.black-bg {
+  background-color: #0d0d0d;
+}
+
+.charcoal-color {
+  color: #2f4f4f;
+}
+
+.charcoal-bg {
+  background-color: #2f4f4f;
+}
+
+/* Красный и охристый */
+.red-ochre-color {
+  color: #e97451;
+}
+
+.red-ochre-bg {
+  background-color: #e97451;
+}
+
+.terracotta-color {
+  color: #a0522d;
+}
+
+.terracotta-bg {
+  background-color: #a0522d;
+}
+
+/* Серо-песочный */
+.stone-color {
+  color: #c2b280;
+}
+
+.stone-bg {
+  background-color: #c2b280;
+}

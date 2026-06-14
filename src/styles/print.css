@@ -1,0 +1,98 @@
+@media print {
+  @page {
+    size: A5 portrait;
+    margin: 40px;
+    /*margin: 0;*/
+    padding: 40px 0 !important;
+  }
+
+  .full-content-container {
+    /*padding: 40px;*/
+  }
+
+  @page:first {
+    margin: 0;
+  }
+
+  html {
+    font-size: 10px;
+  }
+
+  body {
+    @apply py-0;
+  }
+
+  main {
+    width: 100%;
+    @apply text-sm;
+  }
+
+  h1 {
+    page-break-before: always;
+  }
+
+  figure {
+    page-break-inside: avoid; /* Prevent from breaking across pages */
+  }
+
+  .no-print {
+    display: none;
+  }
+
+  .page-top-header,
+  .page-bottom-footer {
+    display: none;
+  }
+
+  .page-delimiter {
+    page-break-after: always;
+  }
+
+  .page-break {
+    page-break-before: always;
+    break-before: page;
+  }
+
+  .content {
+    /*padding: 40px;*/
+  }
+
+  h2,
+  h3,
+  h2 + blockquote {
+    break-after: avoid;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    page-break-after: avoid;
+  }
+}
+
+.load-bg-images {
+  @page {
+    margin: 0;
+  }
+
+  @media print {
+    .page {
+      margin: 40px;
+    }
+  }
+}
+
+@media print and (color) {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/*@media print {*/
+/*  a::after{*/
+/*    content: " (" attr(href) ") ";*/
+/*  }*/
+/*}*/

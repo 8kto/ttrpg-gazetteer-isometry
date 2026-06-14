@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #b87333;
+  --color-secondary: #a68b6a;
+  --color-secondary-bg: #eed5b7;
+  --color-muted: #ddd;
+  --color-muted-text: #e3ab67ff;
+  --color-light-bg: rgba(238, 213, 183, 0.25);
+  --color-lighter-bg: rgba(238, 213, 183, 0.1);
+
+  --font-regular: 'Roboto', sans-serif;
+  --font-cursive: 'El Messiri', serif;
+
+  --color-map-label: #be0035;
+  --color-map-font: Playfair Display;
+}
