@@ -1,3 +1,13 @@
 node_modules
-build
-.idea
+/build
+.idea/
+venv
+src/styles/fonts/
+src/images/copyright/
+.env.development.local
+
+tests/pdf-snapshots/current/
+tests/pdf-snapshots/diff/
+tests/pdf-snapshots/reports/
+docs/superpowers/
+.claude/
