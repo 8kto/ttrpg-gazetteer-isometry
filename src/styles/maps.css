@@ -1,0 +1,392 @@
+:root {
+  --area-b-map--color: #4b5a71;
+  --area-c-map--color: var(--color-primary);
+  --area-d-map--color: #3f8496;
+  --area-e-map--color: #f0ece0;
+  --area-s-map--color: #4d3c34;
+}
+
+@media print {
+  .page--map + .page-delimiter {
+    page-break-after: auto;
+    display: none;
+  }
+}
+
+/******************* MAP CLASSES **********************/
+
+@page map_image {
+  margin: 0;
+}
+
+.area-map-image-container {
+  margin: 35px;
+}
+
+.area-map-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-size: cover;
+  pointer-events: none;
+}
+
+.area-intro-block {
+  @apply text-xl;
+  color: #2c2c2c;
+  color: var(--color-primary);
+  font-family: var(--font-mono);
+}
+
+/******************* MAPS **********************/
+.page-tpl--map h1 {
+  @apply text-5xl;
+}
+
+.page--wrapper:has(.page-tpl--map) {
+  page: map_image;
+  position: relative;
+}
+
+.page-tpl--map {
+  height: 100%;
+  min-height: 100%;
+}
+
+/*** GLOBAL MAP ***/
+
+#page-map {
+  --opacity: 0.8;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, var(--opacity)), rgba(255, 255, 255, var(--opacity))),
+    url('http://localhost:3001/images/fragments/bg-wall.png');
+  background-size: cover;
+}
+
+.page-name--map .area-map-image-container {
+  margin-top: 15px;
+}
+
+.page-name--map h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#map-global {
+  background: url('http://localhost:3001/images/maps/global.png') no-repeat center 60px;
+  background-size: 98%;
+}
+
+.area-intro-block--map {
+  @apply px-8 text-xl;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  right: 20px;
+  max-height: 150px;
+}
+
+.area-intro-block--map ul {
+  @apply pl-5 columns-2 gap-8;
+}
+
+.area-intro-block--map ul > li {
+  @apply break-inside-avoid;
+}
+
+.area-intro-block--map ul > li::before {
+  background: none;
+}
+
+.area-intro-block--map ul a {
+  border-bottom: none;
+}
+
+/*** AREA A ***/
+
+#page-area-a-map {
+  --opacity: 0.75;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, var(--opacity)), rgba(255, 255, 255, var(--opacity))),
+    url('http://localhost:3001/images/fragments/bg-crystals.png');
+  background-size: cover;
+}
+
+#map-area-a {
+  background: url('http://localhost:3001/images/maps/area-a.png') no-repeat left bottom;
+  background-size: 90%;
+}
+
+.area-intro-block--area-a {
+  position: absolute;
+  right: 15px;
+  bottom: 150px;
+  width: 175px;
+}
+
+/*** AREA B ***/
+
+.page-name--area-b-map h1 {
+  text-align: right;
+}
+
+.page-name--area-b-map .area-intro-block {
+  padding: 0;
+  margin: 0;
+}
+
+#page-area-b-map {
+  --opacity: 0.45;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, var(--opacity)), rgba(255, 255, 255, var(--opacity))),
+    url('http://localhost:3001/images/fragments/bg-veins-wall.png');
+  background-size: cover;
+  background-position:
+    center center,
+    center center;
+}
+
+#map-area-b {
+  background: url('http://localhost:3001/images/maps/area-b.png') no-repeat left bottom;
+  background-size: 65%;
+}
+
+.page-name--area-b-map h1,
+.page-name--area-b-map .area-intro-block--area-b {
+  color: var(--area-c-map--color) !important;
+}
+
+.area-intro-block--area-b {
+  @apply px-8 text-lg;
+  position: absolute;
+  top: 105px;
+  right: 35px;
+  max-width: 230px;
+  text-align: right;
+  /*height: calc(100% - 100px);*/
+}
+
+.area-intro-block--area-b--block-1 {
+  max-width: 220px;
+  margin-bottom: 1rem;
+}
+
+.area-intro-block--area-b--block-2 {
+  margin: var(--paraghraph-margin);
+  max-width: 110px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.area-intro-block--area-b--block-3 {
+  @apply text-xl;
+  position: absolute;
+  bottom: -110px;
+  right: 0;
+  max-width: 200px;
+}
+
+.area-intro-block--area-b--block-3 a {
+  color: var(--area-c-map--color) !important;
+}
+
+/*** AREA C ***/
+#page-area-c-map {
+  --opacity: 0.55;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, var(--opacity)), rgba(255, 255, 255, var(--opacity))),
+    url('http://localhost:3001/images/fragments/bg-wall-2.png');
+  background-size: cover;
+  background-position:
+    center center,
+    center bottom;
+}
+
+#map-area-c {
+  background: url('http://localhost:3001/images/maps/area-c.png') no-repeat left bottom;
+  /*background-position-y: calc(50% + 120px);*/
+  background-size: 95%;
+}
+
+/*** AREA D ***/
+#page-area-d-map {
+  --opacity: 0.65;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, var(--opacity)), rgba(255, 255, 255, var(--opacity))),
+    url('http://localhost:3001/images/fragments/bg-mold-wall.png');
+  background-size: cover;
+  background-position:
+    center center,
+    center bottom;
+}
+
+#map-area-d {
+  background: url('http://localhost:3001/images/maps/area-d.png') no-repeat left bottom;
+  /*background-position-y: calc(50% + 45px);*/
+  background-size: 80%;
+}
+
+.page-name--area-d-map h1,
+.page-name--area-d-map .area-intro-block--area-d {
+  color: var(--area-d-map--color) !important;
+  /*color: #f0ece0 !important;*/
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.46);
+}
+
+.area-intro-block--area-d {
+  @apply text-2xl;
+}
+
+/*** AREA E ***/
+#page-area-e-map {
+  --opacity: 0.75;
+
+  background-image: /*linear-gradient(rgba(255, 255, 255, var(--opacity)), rgba(255, 255, 255, var(--opacity))),*/
+    linear-gradient(rgba(0, 0, 0, var(--opacity)), rgba(0, 0, 0, var(--opacity))),
+    /*url('http://localhost:3001/images/fragments/bg-veins-wall.png');*/
+      url('http://localhost:3001/images/fragments/bg-tentacles.png');
+  background-size: cover;
+  background-position:
+    center center,
+    center center;
+}
+
+#map-area-e {
+  background: url('http://localhost:3001/images/maps/area-e.png') no-repeat;
+  background-position-x: right;
+  background-position-y: 110px;
+  background-size: 80%;
+}
+
+.page-name--area-e-map h1,
+.page-name--area-e-map a {
+  color: var(--area-e-map--color);
+}
+
+.area-intro-block--area-e {
+  max-width: 90%;
+  margin-top: 25px;
+  color: var(--area-e-map--color);
+  @apply text-xl;
+}
+
+.area-intro-block--area-e p:nth-child(2) {
+  max-width: 75%;
+}
+
+/*** AREA S ***/
+#page-area-s-map {
+  --opacity: 0.75;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, var(--opacity)), rgba(255, 255, 255, var(--opacity))),
+    /*linear-gradient(rgba(190, 168, 144, var(--opacity)), rgba(190, 168, 144, var(--opacity))),*/
+      /*url('http://localhost:3001/images/fragments/bg-fractal.png');*/
+      url('http://localhost:3001/images/fragments/bg-abo.png');
+  background-size: cover;
+  background-position:
+    center center,
+    left bottom;
+}
+
+#map-area-s {
+  background: url('http://localhost:3001/images/maps/area-s.png') no-repeat right top;
+  background-size: 100%;
+}
+
+.page-name--area-s-map .area-map-image-container {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+}
+
+.page-name--area-s-map h1,
+.page-name--area-s-map .area-intro-block--area-s {
+  color: var(--area-s-map--color) !important;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
+}
+
+.area-intro-block--area-s {
+  @apply text-2xl;
+}
+
+/*** ELEVATOR ***/
+
+.map-elevator {
+  --opacity: 0.55;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, var(--opacity)), rgba(255, 255, 255, var(--opacity))),
+    url('http://localhost:3001/images/fragments/bg-wall-2.png');
+
+  background-size: 200%;
+  padding: 3px;
+}
+
+/*** GROUNDS MAP (PAGE) ***/
+
+#page-grounds-map {
+  --opacity: 0.75;
+
+  background-image: url('http://localhost:3001/images/maps/radar-v.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+#page-grounds-map h1 {
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+/*** MINI MAPS ***/
+
+.map-complex-diagram {
+  background: url('http://localhost:3001/images/maps/station-schema.png') center center no-repeat;
+  aspect-ratio: 1013 / 902;
+  background-size: 110%;
+  width: 100%;
+  height: auto;
+}
+
+.map-orangery {
+  --opacity: 0.55;
+
+  background-image:
+    url('http://localhost:3001/images/maps/orangery.png'),
+    linear-gradient(rgba(255, 255, 255, var(--opacity)), rgba(255, 255, 255, var(--opacity))),
+    url('http://localhost:3001/images/fragments/bg-wall-2.png');
+  aspect-ratio: 1155 / 1155;
+  background-size: 90%, 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: auto;
+}
+
+.map-chasm {
+  --opacity: 0.55;
+
+  background-image:
+    url('http://localhost:3001/images/maps/chasm.png'),
+    linear-gradient(rgba(255, 255, 255, var(--opacity)), rgba(255, 255, 255, var(--opacity))),
+    url('http://localhost:3001/images/fragments/bg-wall-2.png');
+  aspect-ratio: 682 / 857;
+  background-size: 90%, 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: auto;
+}

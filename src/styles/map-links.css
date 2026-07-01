@@ -1,0 +1,321 @@
+a.hotspot {
+  position: absolute;
+  display: block;
+  /*background: #00ffff;*/
+  /*opacity: 0.5;*/
+  border: none;
+  text-decoration: none;
+  text-underline: none;
+  z-index: 999;
+}
+
+/* GLOBAL MAP: LINKS */
+.page--main,
+.page--osr {
+  a.hs-a1 {
+    left: 47.027316%;
+    top: 46.985483%;
+    width: 17.480657%;
+    height: 7.827595%;
+  }
+  a.hs-a2 {
+    left: 32.58453%;
+    top: 49.773253%;
+    width: 6.965296%;
+    height: 5.129753%;
+  }
+  a.hs-a3 {
+    left: 42.593127%;
+    top: 34.305627%;
+    width: 17.734039%;
+    height: 2.791624%;
+  }
+  a.hs-a4 {
+    left: 40.56607%;
+    top: 38.622174%;
+    width: 6.205149%;
+    height: 3.690904%;
+  }
+  a.hs-a5 {
+    left: 55.262237%;
+    top: 29.089799%;
+    width: 5.19162%;
+    height: 3.600976%;
+  }
+  a.hs-a6 {
+    left: 29.417253%;
+    top: 62.093397%;
+    width: 16.593819%;
+    height: 11.334789%;
+  }
+  a.hs-a7 {
+    left: 28.150342%;
+    top: 74.773252%;
+    width: 17.987421%;
+    height: 2.611768%;
+  }
+
+  a.hs-b1 {
+    left: 79.080164%;
+    top: 41.949512%;
+    width: 4.558165%;
+    height: 3.241264%;
+  }
+  a.hs-b10 {
+    left: 92.50942%;
+    top: 53.280447%;
+    width: 5.064929%;
+    height: 3.600976%;
+  }
+  a.hs-b11 {
+    left: 77.813252%;
+    top: 61.01426%;
+    width: 6.838605%;
+    height: 6.029034%;
+  }
+  a.hs-b12 {
+    left: 78.826781%;
+    top: 67.579008%;
+    width: 4.431474%;
+    height: 3.331192%;
+  }
+  a.hs-b2 {
+    left: 78.446708%;
+    top: 37.632965%;
+    width: 5.19162%;
+    height: 3.511048%;
+  }
+  a.hs-b3 {
+    left: 69.578331%;
+    top: 30.168936%;
+    width: 6.205149%;
+    height: 4.859969%;
+  }
+  a.hs-b4 {
+    left: 65.270834%;
+    top: 37.093397%;
+    width: 10.766029%;
+    height: 4.949897%;
+  }
+  a.hs-b5 {
+    left: 90.060662%;
+    top: 41.859584%;
+    width: 4.431474%;
+    height: 3.061408%;
+  }
+  a.hs-b6 {
+    left: 84.527881%;
+    top: 47.165339%;
+    width: 4.938238%;
+    height: 3.870761%;
+  }
+  a.hs-b7 {
+    left: 74.392593%;
+    top: 50.222893%;
+    width: 4.811547%;
+    height: 3.42112%;
+  }
+  a.hs-b8 {
+    left: 74.519284%;
+    top: 56.158145%;
+    width: 5.445002%;
+    height: 3.511048%;
+  }
+  a.hs-b9 {
+    left: 83.726108%;
+    top: 56.338001%;
+    width: 5.698385%;
+    height: 3.780832%;
+  }
+
+  a.hs-c1 {
+    left: 70.158307%;
+    top: 17.670691%;
+    width: 5.408809%;
+    height: 3.847403%;
+  }
+  a.hs-c2 {
+    left: 61.110556%;
+    top: 15.482861%;
+    width: 4.265586%;
+    height: 4.334414%;
+  }
+  a.hs-c3 {
+    left: 70.442438%;
+    top: 12.891891%;
+    width: 5.031447%;
+    height: 3.427097%;
+  }
+  a.hs-c4 {
+    left: 71.608714%;
+    top: 9.609087%;
+    width: 2.698903%;
+    height: 2.682037%;
+  }
+  a.hs-c5 {
+    left: 80.102374%;
+    top: 14.935865%;
+    width: 5.031447%;
+    height: 9.884285%;
+  }
+  a.hs-c5-bottom {
+    left: 54.311067%;
+    top: 58.174579%;
+    width: 2.97313%;
+    height: 1.915583%;
+  }
+  a.hs-c6 {
+    left: 70.285563%;
+    top: 22.890321%;
+    width: 5.031447%;
+    height: 3.509879%;
+  }
+  a.hs-c6-e {
+    left: 24.4763%;
+    top: 20.27685%;
+    width: 4.938238%;
+    height: 3.331192%;
+  }
+  a.hs-c7 {
+    left: 61.015768%;
+    top: 20.392499%;
+    width: 5.031447%;
+    height: 4.089371%;
+  }
+  a.hs-c8 {
+    left: 88.403026%;
+    top: 17.300899%;
+    width: 5.031447%;
+    height: 5%;
+  }
+  a.hs-c8-bottom {
+    left: 58.32569%;
+    top: 57.742455%;
+    width: 2.858779%;
+    height: 2.07792%;
+  }
+  a.hs-c9 {
+    left: 75.302298%;
+    top: 26.509976%;
+    width: 3.773585%;
+    height: 2.24026%;
+  }
+  a.hs-c9-e {
+    left: 20.293786%;
+    top: 14.638849%;
+    width: 8.966377%;
+    height: 2.858271%;
+  }
+
+  a.hs-d1 {
+    left: 56.026332%;
+    top: 65.560942%;
+    width: 9.14808%;
+    height: 12.548703%;
+  }
+  a.hs-d2 {
+    left: 55.769659%;
+    top: 61.601186%;
+    width: 12.006859%;
+    height: 3.051943%;
+  }
+  a.hs-d3 {
+    left: 50.790868%;
+    top: 60.800595%;
+    width: 3.087477%;
+    height: 3.376623%;
+  }
+  a.hs-d3-e {
+    left: 24.712489%;
+    top: 25.278135%;
+    width: 3.522013%;
+    height: 2.5%;
+  }
+  a.hs-d3-top {
+    left: 67.220392%;
+    top: 26.402529%;
+    width: 3.455213%;
+    height: 2.24026%;
+  }
+  a.hs-d4 {
+    left: 48.451187%;
+    top: 57.722602%;
+    width: 3.087481%;
+    height: 2.80844%;
+  }
+  a.hs-d4-e {
+    left: 22.331858%;
+    top: 30.338849%;
+    width: 8.794578%;
+    height: 4.758955%;
+  }
+  a.hs-d4-top {
+    left: 63.116099%;
+    top: 26.428808%;
+    width: 2.973126%;
+    height: 2.24026%;
+  }
+
+  a.hs-e1 {
+    left: 21.300632%;
+    top: 59.536926%;
+    width: 6.289308%;
+    height: 3.295457%;
+  }
+  a.hs-e2 {
+    left: 17.579698%;
+    top: 52.962257%;
+    width: 5.031447%;
+    height: 5.73052%;
+  }
+  a.hs-e3 {
+    left: 16.751272%;
+    top: 58.861302%;
+    width: 3.659234%;
+    height: 2.727269%;
+  }
+  a.hs-e4 {
+    left: 10.805017%;
+    top: 57.424203%;
+    width: 5.031447%;
+    height: 2.889606%;
+  }
+  a.hs-e5 {
+    left: 6.700717%;
+    top: 70.584646%;
+    width: 11.206402%;
+    height: 3.376623%;
+  }
+  a.hs-e6 {
+    left: 9.065068%;
+    top: 63.538142%;
+    width: 10.86335%;
+    height: 6.948051%;
+  }
+  a.hs-e7 {
+    left: 21.999077%;
+    top: 66.923297%;
+    width: 5.031447%;
+    height: 5%;
+  }
+
+  a.hs-rope-ladder {
+    left: 55.642311%;
+    top: 41.14016%;
+    width: 5.445002%;
+    height: 2.97148%;
+  }
+
+  a.hs-s1 {
+    left: 29.918092%;
+    top: 79.541252%;
+    width: 6.060607%;
+    height: 2.159086%;
+  }
+  a.hs-s2 {
+    left: 36.706763%;
+    top: 78.811313%;
+    width: 7.089767%;
+    height: 3.782469%;
+  }
+}

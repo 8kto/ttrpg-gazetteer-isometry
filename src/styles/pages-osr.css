@@ -1,0 +1,244 @@
+.page--osr {
+  & #stats-rat,
+  & #stats-bones-chimaera {
+    & .ref-header {
+      margin-top: 0;
+    }
+
+    & p {
+      margin-bottom: 0.4rem;
+    }
+
+    & .stats-insert {
+      margin-top: 0.4rem;
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  & #stats-gregorzsh {
+    margin-bottom: 0;
+
+    & h4 {
+      margin-bottom: 0;
+    }
+
+    & p:has(+ h4) {
+      margin-bottom: 0.3rem;
+    }
+  }
+
+  & #stats-simak {
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+
+    & ul {
+      margin-bottom: 0;
+    }
+
+    & .ref-header {
+      margin-top: 0;
+    }
+
+    & .stats-insert {
+      margin-top: 0.4rem;
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  & #stats-corpse-slave-uu {
+    & p {
+      margin-bottom: 0.4rem;
+    }
+
+    & ul {
+      margin-bottom: 0;
+    }
+
+    & li {
+      line-height: 1.4;
+    }
+
+    & li:first-of-type {
+      display: none;
+    }
+  }
+
+  & #stats-bone-chimaera-3 {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    & p {
+      margin-bottom: 0.4rem;
+    }
+
+    & ul {
+      margin-bottom: 0;
+    }
+
+    & li {
+      line-height: 1.4;
+    }
+  }
+
+  & #stats-robo-worker {
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+
+    & .stats-insert {
+      margin-top: 0.4rem;
+      margin-bottom: 0.4rem;
+    }
+
+    & p {
+      margin-bottom: 0.4rem;
+    }
+
+    & ul {
+      margin-bottom: 0;
+    }
+
+    & + .ref-insert {
+      margin-top: 0.5rem;
+      margin-bottom: 0;
+    }
+  }
+
+  & #stats-eye-var-tentacle,
+  & #stats-eye-var-clone {
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+
+    & p {
+      margin-bottom: 0.4rem;
+    }
+
+    & ul {
+      margin-bottom: 0;
+    }
+
+    & ul li {
+      line-height: 1.4;
+    }
+
+    & .stats-insert {
+      margin-top: 0.4rem;
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  & #stats-chimaera,
+  & #stats-micomant-chimaera {
+    & p {
+      margin-bottom: 0.4rem;
+    }
+
+    & ul {
+      margin-bottom: 0;
+    }
+
+    & ul li {
+      line-height: 1.4;
+    }
+
+    & .stats-insert {
+      margin-top: 0.4rem;
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  #pic-a3 {
+    margin-top: 2.5rem !important;
+    max-height: 80px !important;
+  }
+
+  & #pic-b10b {
+    margin-top: 3rem;
+  }
+
+  & #pic-b8 {
+    max-height: 56px;
+  }
+
+  &.page-name--appendix-q1--micomant--osr {
+    --paraghraph-margin: 0 0 0.4rem 0;
+
+    & ul {
+      margin-bottom: 0;
+      break-inside: avoid;
+    }
+
+    & ul li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &.page-name--appendix-q1--micomant--osr-1 {
+    --section-margin: 0.75rem;
+    --paraghraph-margin: 0 0 0.4rem 0;
+
+    & h2 {
+      column-span: all;
+      font-size: 1.875rem;
+      margin-bottom: 1rem;
+      margin-top: 0;
+      line-height: 2.25rem;
+
+      &:after {
+        content: none;
+      }
+    }
+
+    & .content .room-section h3 {
+      color: var(--color-primary);
+      margin-bottom: 0.25rem;
+      padding-bottom: 0;
+      font-size: 1.25rem;
+    }
+
+    & p:has(+ h3) {
+      margin-bottom: var(--section-margin);
+    }
+
+    & .content .room-section h3:after {
+      content: none;
+    }
+
+    & h3 + ul {
+      color: var(--color-accent);
+      padding-left: 0;
+      break-inside: avoid;
+      margin-bottom: 0;
+    }
+
+    & p,
+    & h3 + ul + p,
+    & h3 + ul {
+      break-before: avoid;
+      break-inside: avoid;
+    }
+
+    & h3 + ul li {
+      list-style: none;
+      padding-left: 0;
+      font-style: italic;
+      font-family: var(--font-regular-condensed);
+      line-height: 1.3;
+
+      &::before {
+        content: none;
+      }
+    }
+
+    #block-flesh-to-crystal {
+      break-inside: avoid;
+      margin-bottom: var(--section-margin);
+    }
+  }
+}
+
+/* TODO to the root level */
+ins,
+strong,
+em {
+  break-inside: avoid;
+}

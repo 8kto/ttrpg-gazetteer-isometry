@@ -1,0 +1,240 @@
+.w-100 {
+  width: 100%;
+}
+/******************* PICTURES **********************/
+
+#cover-image--main {
+  background-image: url('http://localhost:3001/images/covers/fungi-black.png');
+  /*background-image: url('http://localhost:3001/images/covers/FungiBlackCover.png');*/
+}
+
+#cover-image--back {
+  background-image: url('http://localhost:3001/images/covers/Haeckel_Basimycetes.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#cover-image--bestiary {
+  background:
+    url('http://localhost:3001/images/covers/crystals-bg--opt.png') center no-repeat,
+    /*url('http://localhost:3001/images/horror-portal-opt.jpg') center no-repeat,*/ #000;
+  background-size: 120%;
+}
+
+/******************* FRONT COVER **********************/
+.cover-image {
+  display: block;
+  min-width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+}
+
+.page-name--front-cover-main .cover-title-container h1:not(.cover-title) {
+  display: none;
+}
+
+.page-name--front-cover-main .cover-title-container {
+  /*margin-top: -20rem;*/
+}
+
+.page-name--front-cover-main .cover-title-container * {
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+.page-name--front-cover-main .cover-title-container .cover-title {
+  color: white;
+  font-size: 70px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.page-name--front-cover-main .cover-title-container .cover-title--author {
+  color: #fff;
+  border: none;
+}
+
+.page-name--front-cover-main .cover-title-container .cover-title--author::after {
+  display: none;
+}
+
+.page-name--front-cover-main .cover-title--bottom {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+
+/******************* BACK COVER **********************/
+
+.page--wrapper.page-name--back-cover {
+  page: fullpage_image;
+  padding: 0;
+  overflow: hidden;
+}
+
+.page-name--back-cover {
+  position: relative;
+}
+
+.page-name--back-cover .cover-container {
+  position: relative;
+  width: min(860px, 88vw);
+  margin: auto;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 6vh 0;
+}
+
+.back-cover-text-container {
+  position: relative;
+  font-family: var(--font-regular-condensed);
+  color: #fdf8f5;
+  text-align: center;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  padding: clamp(24px, 4vw, 56px);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
+}
+
+.back-cover-text-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  background: radial-gradient(
+    closest-side at 50% 45%,
+    rgba(0, 0, 0, 0.82) 0%,
+    rgba(0, 0, 0, 0.7) 35%,
+    rgba(0, 0, 0, 0.4) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  filter: blur(10px);
+}
+
+.back-cover-image {
+  display: block;
+  width: min(520px, 72vw);
+  height: auto;
+  margin: 0 auto 18px;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.55));
+}
+
+.back-cover-text-container p,
+.back-cover-text-container small,
+.back-cover-text-container li {
+  font-size: 14px;
+  line-height: 1.45;
+  margin: 10px 0;
+}
+
+.page-name--back-cover a {
+  color: #c7b7c2;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(199, 183, 194, 0.55);
+}
+.page-name--back-cover a:hover {
+  border-bottom-style: solid;
+}
+.back-cover-text-container a[href*='ivlev'] {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Версия */
+.back-cover-text-container p:last-child {
+  margin-top: 18px;
+  opacity: 0.85;
+}
+
+/* Опционально: лёгкий общий затемняющий слой поверх фона */
+.page-name--back-cover .cover-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.3) 70%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  pointer-events: none;
+}
+
+/******************* BESTIARY COVER **********************/
+
+.page-name--front-cover-bestiary .cover-title-container * {
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+.page-name--front-cover-bestiary .cover-title-container .cover-title {
+  color: white;
+  font-size: 70px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.page-name--front-cover-bestiary .cover-title-container .cover-title--author {
+  color: #fff;
+  border: none;
+}
+
+.page-name--front-cover-bestiary .cover-title-container .cover-title--author::after {
+  display: none;
+}
+
+.page-name--front-cover-bestiary .cover-title--bottom {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+
+.page-name--front-cover-bestiary .font-OHF .cover-title-container .cover-title {
+  --font-book-title: 'Old Horror Films', serif;
+
+  font-family: var(--font-book-title);
+  font-size: 59px;
+  line-height: 0.75;
+  max-width: none;
+  font-weight: normal;
+}
+
+.page-name--front-cover-bestiary .font-OHF .cover-title-container {
+  margin-top: -24rem;
+}
+
+.page-name--front-cover-bestiary .font-OHF .cover-title--bottom {
+  bottom: 0;
+}
+
+.page-name--front-cover-bestiary .cover-title--subtitle {
+  display: block;
+}
+
+.page-name--front-cover-bestiary .cover-title--subtitle::after {
+  display: none;
+}
+
+.info-message--feedback + .brick {
+  display: block;
+  margin-top: 5rem;
+}

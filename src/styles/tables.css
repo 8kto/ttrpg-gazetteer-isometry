@@ -1,0 +1,65 @@
+table {
+  @apply min-w-full;
+  @apply table-fixed;
+  @apply text-sm;
+  @apply text-left;
+  @apply mb-4;
+  color: #333;
+  font-family: var(--font-regular-condensed);
+}
+
+table thead th {
+  @apply px-1;
+  @apply text-left font-bold;
+  vertical-align: top;
+  break-inside: avoid;
+  word-break: keep-all;
+  background: var(--color-darker-bg);
+  color: #fff;
+  font-family: var(--font-regular-condensed);
+}
+
+table thead th:first-of-type,
+table tbody td:first-of-type {
+  @apply text-center;
+}
+
+table tr {
+  /*@apply border;*/
+}
+
+table thead tr {
+  border-color: #888;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #fff;
+  color: var(--color-primary);
+}
+
+table tbody tr:nth-child(even) {
+  background-color: var(--color-light-bg);
+  color: var(--color-primary);
+}
+
+table tbody td {
+  @apply px-1;
+  @apply py-1.5;
+  @apply text-left;
+  vertical-align: top;
+  break-inside: avoid;
+  word-break: keep-all;
+}
+
+.alternative table tbody td:first-of-type {
+  @apply pl-4 text-left;
+}
+
+.list-to-table--converted table thead th:first-of-type {
+  min-width: 26px;
+  white-space: nowrap;
+}
+
+.content > .list-to-table--converted:last-child > table {
+  margin-bottom: 0;
+}

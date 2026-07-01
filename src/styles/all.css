@@ -1,0 +1,366 @@
+html {
+  font-size: 14px; /* makes REM be 1=0.1 */
+}
+
+body {
+  @apply py-10;
+  font-family: var(--font-regular);
+  color: var(--color-text-default);
+}
+
+p {
+  break-inside: avoid-page;
+  margin: var(--paraghraph-margin);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  font-family: var(--font-cursive);
+}
+
+h1 {
+  @apply text-3xl;
+  @apply mb-4 mt-0;
+  line-height: 2.25rem;
+}
+
+h2 {
+  @apply text-xl;
+  @apply mb-3 mt-3;
+  line-height: 1.5rem;
+  border-color: var(--color-primary);
+}
+
+h3 {
+  @apply text-xl;
+  @apply mb-1 mt-2;
+  @apply font-semibold;
+  border-color: var(--color-primary);
+  line-height: 1.25rem;
+  color: var(--color-secondary);
+}
+
+h3:has(+ .list-to-table--converted) {
+  margin: 0 0 0.3rem;
+}
+
+h4 {
+  @apply text-base;
+  color: var(--color-secondary);
+}
+
+h2 + .span-all-columns {
+  @apply mt-2;
+}
+
+/* BORDERED HEADERS */
+/*h2,*/
+/*.ref-insert .ref-header {*/
+/*  --underline-h: 2px; !* высота подчёркивания слева *!*/
+/*  --taper-right: 80%; !* насколько «поднята» верхняя кромка справа (0–100) *!*/
+/*  --underline-gap: 0.15em; !* зазор между текстом и линией *!*/
+/*  --underline-opacity: 0.75;*/
+
+/*  position: relative;*/
+/*  padding-bottom: calc(var(--underline-gap) + var(--underline-h));*/
+/*  line-height: 1;*/
+/*  border: none;*/
+/*}*/
+
+.ref-insert .ref-header {
+  --taper-right: 60%; /* насколько «поднята» верхняя кромка справа (0–100) */
+}
+
+/*h2::after,*/
+/*.ref-insert .ref-header::after {*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  left: 0;*/
+/*  right: 0;*/
+/*  !* размещаем линию под текстом *!*/
+/*  bottom: 0;*/
+/*  height: var(--underline-h);*/
+/*  background: currentColor; !* цвет = цвету текста *!*/
+/*  !*background: var(--color-primary);*!*/
+/*  opacity: var(--underline-opacity);*/
+/*  !* Сужение: сверху слева 0, сверху справа — var(--taper-right) от высоты *!*/
+/*  clip-path: polygon(0 0, 100% var(--taper-right), 100% 100%, 0 100%);*/
+/*  pointer-events: none;*/
+/*  max-width: 150px;*/
+/*}*/
+
+a {
+  color: var(--color-primary);
+  break-inside: avoid;
+}
+
+a:not(.linkified) {
+  text-decoration: none;
+  border-bottom: 0.03rem dotted #bdbdbd;
+  /*border-bottom: 0.03rem dotted rgba(230, 180, 98, 0.65);*/
+  padding-bottom: 0.05rem;
+}
+
+a:hover {
+  border-bottom-style: solid;
+}
+
+p,
+ul li {
+  orphans: 2; /* минимум строк абзаца внизу колонки */
+  widows: 2; /* минимум строк абзаца вверху следующей колонки */
+}
+
+.page-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  /*background: url('http://localhost:3001/images/paper-bg-edit-small.jpg') no-repeat center center;*/
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  @apply pt-8;
+  @apply pb-2;
+  /*@apply text-left;*/
+  /*word-wrap: break-word;*/
+  word-break: keep-all;
+  text-wrap: pretty;
+}
+
+.content h3,
+.content h4,
+.content h5 {
+  @apply mt-5;
+  @apply mb-1.5;
+}
+
+.content h2:not(:first-of-type),
+.content h3:not(:first-of-type),
+.content h4:not(:first-of-type),
+.content h5:not(:first-of-type) {
+  @apply mt-5;
+  @apply mb-1.5;
+}
+
+.content h2:first-of-type,
+.content h3:first-of-type,
+.content h4:first-of-type,
+.content h5:first-of-type {
+  @apply mt-0;
+}
+
+.content h1 + h2 {
+  @apply mt-0 mb-1.5;
+}
+
+.page-top-header {
+  color: var(--color-muted);
+  font-family: var(--font-cursive);
+  @apply text-sm;
+  @apply text-center;
+}
+
+.page-bottom-footer {
+  @apply fixed;
+  @apply bottom-4;
+  @apply left-1/2;
+  @apply -translate-x-1/2;
+  @apply transform;
+  @apply text-center;
+  @apply text-sm;
+  @apply text-gray-400;
+}
+
+.no-page-break {
+  break-inside: avoid;
+}
+
+main {
+  @apply mx-auto;
+  /*@apply w-full;*/
+  /*@apply max-w-screen-xl;*/
+  @apply flex-grow;
+  width: 1120px; /*PDF page width*/
+}
+
+/* yeah */
+main main {
+  width: auto;
+}
+
+ul {
+}
+
+ol {
+  @apply list-decimal;
+}
+
+ul,
+ol {
+  @apply ml-6;
+  @apply my-2;
+}
+
+ol li::marker {
+  @apply font-bold;
+}
+
+ul li,
+ol li {
+  @apply mb-0;
+}
+
+.content > :last-child,
+.content p:last-of-type {
+  @apply mb-0;
+}
+
+.content
+  :is(p, ul):has(
+    + .ref-insert,
+    + h3,
+    + h4,
+    + h5,
+    + h6,
+    + ul,
+    + .list-to-table--converted,
+    + .room-section,
+    + div.conditional-block
+  ) {
+  margin: var(--paraghraph-margin);
+}
+
+p:empty {
+  display: none;
+}
+
+blockquote {
+  color: var(--color-secondary);
+  font-family: var(--font-cursive);
+  @apply font-bold;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+ins {
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 45%, transparent);
+  padding-bottom: 0.08em;
+}
+
+.info-message {
+  @apply px-2 py-2;
+  border: 1px dashed #ddd;
+}
+
+.content p:has(+ .info-message) {
+  margin: var(--paraghraph-margin);
+}
+
+.info-message:has(> ul) {
+  @apply my-2;
+}
+
+.info-message--sides {
+  @apply m-0 pl-1;
+  border-left: 1px dashed var(--color-muted);
+}
+
+.info-message--sides.margin {
+  @apply my-2 px-2;
+}
+
+.info-message--sides h3 {
+  @apply text-base font-bold;
+}
+
+.quote {
+  color: var(--color-secondary);
+  font-family: var(--font-cursive);
+  margin: 0 auto;
+  text-align: left;
+  @apply mb-4;
+}
+
+.dummy {
+  height: 100%;
+  min-height: 500px;
+  background: #efefef;
+}
+
+.page h1 {
+  column-span: all;
+}
+
+.page-delimiter ~ .page-delimiter {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0.8rem;
+  @apply mb-1.5;
+}
+
+ul li {
+  position: relative;
+  padding-left: 0.2rem;
+  line-height: 1.5;
+}
+
+ul li::before {
+  --bullet-size: 6px;
+  content: '';
+  position: absolute;
+  left: -0.7rem;
+  top: 0.35em;
+  width: var(--bullet-size);
+  height: var(--bullet-size);
+  display: inline-block;
+
+  /* SVG с шумом: чёрный треугольник, «потрёпанный» feDisplacementMap */
+  background-image: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>\
+  <defs>\
+    <filter id='f'>\
+      <feTurbulence type='fractalNoise' baseFrequency='1.9' numOctaves='1' seed='7'/>\
+      <feDisplacementMap in='SourceGraphic' scale='6' xChannelSelector='R' yChannelSelector='G'/>\
+    </filter>\
+  </defs>\
+  <polygon points='10,50 90,10 90,90' fill='%23666' filter='url(%23f)'/>\
+</svg>");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  /* Лёгкая «грязь» вокруг: микро-тени без размытого мыла */
+  /*filter: drop-shadow(0 0 0.2px #000) drop-shadow(0 0 0.6px rgba(0, 0, 0, 0.35));*/
+  transform: rotate(-180deg);
+}
+
+.doc-toc a {
+  border-bottom: none;
+}
+
+.content .hint {
+  color: var(--color-secondary);
+}
+
+.hidden {
+  display: none !important;
+}

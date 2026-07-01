@@ -1,0 +1,691 @@
+/* =========================================================
+   FIRA SANS CONDENSED (локальные ttf)
+   http://localhost:3001/fonts/Fira_Sans_Condensed/*.ttf
+   ========================================================= */
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('http://localhost:3001/fonts/Fira_Sans_Condensed/FiraSansCondensed-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('http://localhost:3001/fonts/Fira_Sans_Condensed/FiraSansCondensed-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('http://localhost:3001/fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('http://localhost:3001/fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('http://localhost:3001/fonts/Fira_Sans_Condensed/FiraSansCondensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('http://localhost:3001/fonts/Fira_Sans_Condensed/FiraSansCondensed-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('http://localhost:3001/fonts/Fira_Sans_Condensed/FiraSansCondensed-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('http://localhost:3001/fonts/Fira_Sans_Condensed/FiraSansCondensed-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('http://localhost:3001/fonts/Fira_Sans_Condensed/FiraSansCondensed-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('http://localhost:3001/fonts/Fira_Sans_Condensed/FiraSansCondensed-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('http://localhost:3001/fonts/Fira_Sans_Condensed/FiraSansCondensed-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('http://localhost:3001/fonts/Fira_Sans_Condensed/FiraSansCondensed-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('http://localhost:3001/fonts/Fira_Sans_Condensed/FiraSansCondensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('http://localhost:3001/fonts/Fira_Sans_Condensed/FiraSansCondensed-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('http://localhost:3001/fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('http://localhost:3001/fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('http://localhost:3001/fonts/Fira_Sans_Condensed/FiraSansCondensed-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  src: url('http://localhost:3001/fonts/Fira_Sans_Condensed/FiraSansCondensed-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* =========================================================
+   PHILOSOPHER (локальные ttf)
+   http://localhost:3001/fonts/Philosopher/*.ttf
+   ========================================================= */
+
+@font-face {
+  font-family: 'Philosopher';
+  src: url('http://localhost:3001/fonts/Philosopher/Philosopher-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Philosopher';
+  src: url('http://localhost:3001/fonts/Philosopher/Philosopher-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Philosopher';
+  src: url('http://localhost:3001/fonts/Philosopher/Philosopher-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Philosopher';
+  src: url('http://localhost:3001/fonts/Philosopher/Philosopher-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* =========================================================
+   ROBOTO — VARIABLE (локальные ttf)
+   http://localhost:3001/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf
+   http://localhost:3001/fonts/Roboto/Roboto-Italic-VariableFont_wdth,wght.ttf
+   ========================================================= */
+
+@font-face {
+  font-family: 'Roboto VF';
+  src: url('http://localhost:3001/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-stretch: 75% 100%;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto VF';
+  src: url('http://localhost:3001/fonts/Roboto/Roboto-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-stretch: 75% 100%;
+  font-style: italic;
+}
+
+/* =========================================================
+   ROBOTO — STATIC CORE (локальные ttf)
+   http://localhost:3001/fonts/Roboto/static/*.ttf
+   ========================================================= */
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* =========================================================
+   ROBOTO CONDENSED (локальные ttf)
+   http://localhost:3001/fonts/Roboto/static/Roboto_Condensed-*.ttf
+   ========================================================= */
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_Condensed-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_Condensed-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_Condensed-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_Condensed-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_Condensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_Condensed-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_Condensed-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_Condensed-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_Condensed-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_Condensed-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_Condensed-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_Condensed-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_Condensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_Condensed-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_Condensed-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_Condensed-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_Condensed-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_Condensed-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* =========================================================
+   ROBOTO SEMI CONDENSED (локальные ttf)
+   http://localhost:3001/fonts/Roboto/static/Roboto_SemiCondensed-*.ttf
+   ========================================================= */
+
+@font-face {
+  font-family: 'Roboto SemiCondensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_SemiCondensed-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto SemiCondensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_SemiCondensed-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto SemiCondensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_SemiCondensed-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto SemiCondensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_SemiCondensed-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto SemiCondensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_SemiCondensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto SemiCondensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_SemiCondensed-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto SemiCondensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_SemiCondensed-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto SemiCondensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_SemiCondensed-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto SemiCondensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_SemiCondensed-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto SemiCondensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_SemiCondensed-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto SemiCondensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_SemiCondensed-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto SemiCondensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_SemiCondensed-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto SemiCondensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_SemiCondensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto SemiCondensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_SemiCondensed-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto SemiCondensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_SemiCondensed-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto SemiCondensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_SemiCondensed-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto SemiCondensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_SemiCondensed-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto SemiCondensed';
+  src: url('http://localhost:3001/fonts/Roboto/static/Roboto_SemiCondensed-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* =========================================================
+   UNIFRAKTURCOOK (локальный ttf)
+   http://localhost:3001/fonts/UnifrakturCook/UnifrakturCook-Bold.ttf
+   ========================================================= */
+
+@font-face {
+  font-family: 'UnifrakturCook';
+  src: url('http://localhost:3001/fonts/UnifrakturCook/UnifrakturCook-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* UNREADABLE BM */
+@font-face {
+  font-family: 'AuthrorTitle';
+  src: url('http://localhost:3001/fonts/ArtDystopia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BookTitle';
+  src: url('http://localhost:3001/fonts/Intradistaff_font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Playful, fun */
+@font-face {
+  font-family: 'Tangak';
+  src: url('http://localhost:3001/fonts/Tangak/tangak/tangak.eot');
+  src:
+    url('http://localhost:3001/fonts/Tangak/tangak/tangak.eot?#iefix') format('embedded-opentype'),
+    url('http://localhost:3001/fonts/Tangak/tangak/tangak.woff2') format('woff2'),
+    url('http://localhost:3001/fonts/Tangak/tangak/tangak.woff') format('woff'),
+    url('http://localhost:3001/fonts/Tangak/tangak/tangak.otf') format('opentype'),
+    url('http://localhost:3001/fonts/Tangak/tangak/tangak.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Health Goth';
+  src: url('http://localhost:3001/fonts/Health-Goth/fonts/wed/HealthGoth-Regular.eot');
+  src:
+    url('http://localhost:3001/fonts/Health-Goth/fonts/wed/HealthGoth-Regular.eot?#iefix') format('embedded-opentype'),
+    url('http://localhost:3001/fonts/Health-Goth/fonts/wed/HealthGoth-Regular.woff2') format('woff2'),
+    url('http://localhost:3001/fonts/Health-Goth/fonts/wed/HealthGoth-Regular.woff') format('woff'),
+    url('http://localhost:3001/fonts/Health-Goth/fonts/HealthGoth-Regular.ttf') format('truetype'),
+    url('http://localhost:3001/fonts/Health-Goth/fonts/HealthGoth-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* UBUNTU MONO*/
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('http://localhost:3001/fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Swampy Clean';
+  src:
+    url('http://localhost:3001/fonts/Swampy/OTF/Swampy Clean.otf') format('opentype'),
+    url('http://localhost:3001/fonts/Swampy/TTF/Swampy Clean.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* =========================
+   Brinky Mono
+   ========================= */
+@font-face {
+  font-family: 'Brinky Mono';
+  src: url('http://localhost:3001/fonts/Brinky-Mono/BrinkyMono-Basic.eot');
+  src:
+    url('http://localhost:3001/fonts/Brinky-Mono/BrinkyMono-Basic.eot?#iefix') format('embedded-opentype'),
+    url('http://localhost:3001/fonts/Brinky-Mono/BrinkyMono-Basic.woff2') format('woff2'),
+    url('http://localhost:3001/fonts/Brinky-Mono/BrinkyMono-Basic.woff') format('woff'),
+    url('http://localhost:3001/fonts/Brinky-Mono/BrinkyMono-Basic.otf') format('opentype'),
+    url('http://localhost:3001/fonts/Brinky-Mono/BrinkyMono-Basic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* =========================
+   Cyrabika
+   ========================= */
+@font-face {
+  font-family: 'Cyrabika';
+  src: url('http://localhost:3001/fonts/Cyrabika/HSEFonts_Ovcharenko_Cyrabika.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* =========================
+   Old Horror Films
+   ========================= */
+@font-face {
+  font-family: 'Old Horror Films';
+  src: url('http://localhost:3001/fonts/Old-Horror-Films/Old Horror Films 1-0.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}

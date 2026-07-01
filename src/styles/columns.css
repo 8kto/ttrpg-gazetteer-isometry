@@ -1,0 +1,62 @@
+.two-columns {
+  column-count: 2;
+  column-gap: 10px;
+  /*column-fill: auto;*/
+  column-fill: balance;
+}
+
+.two-columns--border {
+  column-rule: 1px solid var(--color-muted);
+}
+
+.span-all-columns {
+  column-span: all;
+}
+
+.col-break {
+  break-before: column; /* Force a column break here */
+  height: 0; /* Ensures the div itself doesn't take up space */
+  margin: 0; /* No margin to avoid unnecessary spacing */
+  padding: 0; /* No padding to avoid unnecessary spacing */
+}
+
+.two-columns--hyphens {
+  hyphens: auto; /* включить словарные переносы */
+  -webkit-hyphens: auto; /* Safari */
+  overflow-wrap: anywhere; /* спасает от «длиннословия» и URL */
+  word-break: normal; /* сохраняем корректные разрывы */
+  text-align: justify;
+}
+
+.two-columns h1,
+.two-columns h2,
+.two-columns h3,
+.two-columns figure,
+.two-columns pre,
+.two-columns .card {
+  break-inside: avoid-column;
+}
+
+.two-columns.content p:has(+ h2) {
+  break-inside: avoid-column;
+  page-break-inside: avoid;
+}
+
+.two-columns.content p:has(+ p + h2) {
+  break-inside: avoid-column; /* не рвать сам абзац */
+  break-after: avoid-column; /* не рвать МЕЖДУ этими двумя абзацами */
+  page-break-inside: avoid;
+  page-break-after: avoid;
+}
+
+.col-stop {
+  column-span: all;
+  break-after: column;
+  border: none;
+  height: 0;
+  margin: 0;
+}
+
+.no-col-break {
+  break-inside: avoid-column;
+}

@@ -1,0 +1,167 @@
+.ref-insert {
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  background-clip: padding-box;
+
+  /*@apply my-1.5 px-4 py-3;*/
+  @apply mb-2 px-4 py-3;
+  color: var(--color-primary);
+  background-color: var(--color-light-bg);
+}
+
+.ref-insert > * {
+  @apply text-sm;
+}
+
+.ref-insert .ref-header {
+  /* @see h2,h3 styles in all.css */
+  @apply mb-2 text-left text-lg font-semibold;
+  color: var(--color-accent);
+  color: var(--color-secondary);
+  border-color: currentColor;
+  font-family: var(--font-cursive);
+  line-height: 1.1;
+}
+
+.ref-insert .ref-header--alt {
+  @apply text-2xl;
+}
+
+.ref-insert .ref-header::after {
+}
+
+.ref-insert--OFF .ref-header::before {
+  content: '🜄';
+  position: absolute;
+  left: -0.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #82b4d3;
+}
+
+.ref-insert .ref-header ~ main {
+  break-before: avoid;
+  @apply text-xs;
+  font-size: 8px;
+}
+
+.ref-insert main ul {
+}
+
+.ref-insert main ul li {
+  @apply mb-0 list-none;
+  break-inside: avoid-column;
+  orphans: 2; /* минимум строк абзаца внизу колонки */
+  widows: 2; /* минимум строк абзаца вверху следующей колонки */
+}
+
+.ref-insert main ul li em {
+  /*--color-secondary: rgba(120, 15, 57, 0.8);*/
+
+  color: var(--color-secondary);
+  font-style: normal;
+}
+
+.ref-insert main ul li .damage-prop {
+  border-bottom: 1px solid rgba(120, 15, 57, 0.35);
+}
+
+.ref-insert main p,
+.ref-insert main ul {
+  @apply mb-1.5;
+}
+
+.two-columns .ref-insert main p {
+  break-inside: avoid-column;
+}
+
+.main p:last-of-type {
+  @apply mb-0;
+}
+
+.ref-insert {
+  text-wrap: pretty;
+
+  .stats-insert {
+    font-family: var(--font-regular-condensed);
+    @apply my-2;
+    text-wrap: balance;
+    break-inside: avoid;
+  }
+
+  .stat-record {
+    white-space: nowrap;
+  }
+
+  .stat-record .stat-name {
+    color: var(--color-primary);
+    @apply font-bold;
+  }
+
+  .stat-record--attack {
+    @apply font-normal;
+    color: var(--color-accent-2);
+  }
+}
+
+.ref-insert--bg {
+  background: radial-gradient(circle at 30% 30%, rgba(226, 189, 126, 0.65) 0%, rgba(146, 109, 52, 0.5) 100%);
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.ref-insert:not(.alternative) .list-to-table--converted {
+  margin: 0 -1rem;
+}
+
+.ref-insert:not(.alternative) .list-to-table--converted table {
+  @apply text-sm;
+}
+
+.ref-insert:not(.alternative) main ul li {
+  padding-left: 0.1rem;
+}
+
+.ref-insert:not(.alternative) main ul li::before {
+  --bullet-size: 5px;
+  top: 0.25em;
+}
+
+.ref-insert:has(.list-to-table--converted):not(.alternative) {
+  padding-bottom: 0;
+}
+
+/******** NO BORDER ************************************/
+.ref-insert.no-border .ref-header {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.ref-insert.no-border .ref-header::after {
+  display: none;
+}
+
+/******** ALTERNATIVE (INLINED) ************************************/
+
+.ref-insert.alternative {
+  @apply border-none p-0 my-3;
+  color: var(--color-text-default);
+  background: none;
+}
+
+.ref-insert.alternative .ref-header ~ main {
+  @apply text-sm;
+}
+
+.ref-insert.alternative .ref-header {
+  color: var(--color-secondary);
+}
+
+.ref-insert.alternative .ref-header::after {
+  background: currentColor;
+}
+
+/* first ref-insert on the page */
+.content > .ref-insert.alternative:first-child {
+  margin-top: 0;
+}

@@ -1,0 +1,141 @@
+.content .room-section {
+  @apply mb-5;
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply mt-0 mb-1.5;
+  }
+}
+
+.content .room-section {
+  &.room-a6 {
+    p,
+    ul,
+    ul li {
+      break-inside: avoid;
+    }
+  }
+
+  &.room-b9 {
+    p:first-of-type {
+      break-inside: avoid;
+    }
+  }
+
+  &.room-b12 {
+    p:first-of-type {
+      break-inside: avoid;
+    }
+
+    ul {
+      &:last-of-type {
+        @apply text-xs;
+      }
+
+      li {
+        /* ON */
+        strong {
+          font-weight: normal;
+          color: var(--color-secondary);
+        }
+
+        /* OFF */
+        em {
+          font-style: normal;
+          color: var(--color-accent);
+        }
+      }
+    }
+  }
+
+  &.room-c6 {
+    .map-elevator {
+      width: 95%;
+    }
+  }
+
+  &.room-c7 {
+    /*.ref-insert:not(:last-of-type) {*/
+    /*  @apply mb-0 pb-1;*/
+    /*}*/
+    /*.ref-insert:not(:first-of-type) {*/
+    /*  @apply pt-2;*/
+    /*}*/
+  }
+
+  &.room-c9 {
+    p {
+      @apply mb-2;
+    }
+
+    h3:has(+ #item-c9) {
+      margin-top: 1rem;
+    }
+
+    #item-c9 {
+      p:not(:last-of-type) {
+        display: none;
+      }
+    }
+  }
+
+  &.room-d1 {
+    h3:nth-of-type(2) + p {
+      break-inside: avoid;
+    }
+  }
+
+  &.room-d3 {
+    .ref-insert {
+      margin-bottom: 0;
+    }
+    #item-elevator {
+      p {
+        @apply text-xs;
+      }
+
+      p:not(:last-of-type) {
+        display: none;
+      }
+
+      .map-elevator {
+        width: 90%;
+      }
+    }
+  }
+
+  &.room-d4 {
+    p,
+    ul,
+    ul li {
+      break-inside: avoid;
+    }
+  }
+
+  &.room-e5 {
+    #item-res-ring {
+      p:last-of-type {
+        margin-bottom: 10rem;
+      }
+
+      table {
+        break-inside: avoid;
+      }
+    }
+  }
+
+  &.room-s2 {
+    p,
+    ul,
+    ul li {
+      break-inside: avoid;
+    }
+  }
+}
+
+#room-b9--list-treasure {
+  break-inside: avoid;
+}

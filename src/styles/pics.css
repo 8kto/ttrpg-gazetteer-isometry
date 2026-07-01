@@ -1,0 +1,354 @@
+/******************* HALF PAGE PICS **********************/
+
+@page halfpage_image_bottom {
+  margin: 0;
+}
+
+.container--halfpage_image_bottom,
+.container--halfpage_image_top {
+  margin: var(--page-margin-top) var(--page-margin-right) var(--page-margin-bottom) var(--page-margin-left);
+}
+
+.halfpage_image_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 50vh;
+  z-index: 99;
+  background-size: cover;
+}
+
+.halfpage_image_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 50vh;
+  z-index: 99;
+  background-size: cover;
+}
+
+.page--wrapper:has(.page-tpl--halfpage-bottom) {
+  page: halfpage_image_bottom;
+  position: relative;
+}
+
+.page-tpl--halfpage-bottom {
+  height: 100%;
+  min-height: 100%;
+}
+
+.page-tpl--halfpage-bottom .ref-insert {
+  margin-top: 0;
+}
+
+/******************* HORROR PIC **********************/
+
+#tentacles-horror {
+  height: 60vh;
+  background: url(http://localhost:3001/images/horror-portal-opt.jpg) no-repeat top center;
+  background-size: 100%;
+}
+
+/******************* RADAR PIC **********************/
+
+#img-desert {
+  height: 50vh;
+  background: url(http://localhost:3001/images/maps/grounds.png) no-repeat center center;
+  background-size: 150%;
+}
+
+/******************* SHROOMS LANDSCAPE **********************/
+
+#img-shrooms {
+  height: 55vh;
+  background: url(http://localhost:3001/images/okto-shrms--opt.png) no-repeat top center;
+  background-size: 127%;
+}
+
+/******************* PSI-SHROOM **********************/
+
+#psi-shroom-pic {
+  height: 42vh;
+  background: url(http://localhost:3001/images/mushrooms.jpg) no-repeat center center;
+  background-size: 100%;
+}
+
+/******************* EYE PORTAL **********************/
+
+#eye-portal-pic {
+  height: 50vh;
+  background: url(http://localhost:3001/images/eye-portal.png) no-repeat center center;
+  background-size: 100%;
+}
+
+/******************* MONSTERS **********************/
+.pic-stats {
+  display: none;
+}
+
+.pic-monster-rat {
+  display: block;
+  max-height: 115px;
+  aspect-ratio: 741/544;
+  margin: 0 auto;
+}
+
+.pic-stats.pic-monster-lizard.pic-monster-lizard--inlined {
+  transform-origin: center;
+  display: block;
+  width: 65%;
+  position: absolute;
+  top: 850px;
+  right: -7px;
+  z-index: -1;
+}
+
+.pic-monster-cyborg-wrapper .pic-monster-cyborg {
+  display: block;
+  position: absolute;
+  width: 950px;
+  height: auto; /* keep aspect ratio */
+  right: -10px;
+  bottom: -15px;
+  z-index: 99;
+}
+
+/************** CYBORG ************/
+
+#page-encounters--cyborg {
+  --opacity: 0.65;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, var(--opacity)), rgba(255, 255, 255, var(--opacity))),
+    url('http://localhost:3001/images/fragments/bg-wall-2.png');
+  background-size: cover;
+  background-position:
+    center center,
+    center bottom;
+  z-index: 0;
+}
+
+#page-encounters--cyborg {
+  transform: scaleY(-1);
+}
+#page-encounters--cyborg > * {
+  transform: scaleY(-1);
+}
+
+#page-encounters--cyborg header {
+  @apply text-2xl;
+}
+#page-encounters--cyborg main {
+  @apply text-xl;
+}
+#page-encounters--cyborg .ref-insert main {
+  color: var(--color-primary);
+}
+#page-encounters--cyborg .ref-insert ul {
+  margin-top: 2rem;
+  @apply text-lg;
+}
+
+#page-encounters--cyborg .ref-insert ul li {
+  width: 53%;
+  margin: 0 auto 0.5rem 0;
+}
+
+#page-encounters--cyborg .ref-insert ul li:nth-child(1),
+#page-encounters--cyborg .ref-insert ul li:nth-child(2) {
+  width: 100%;
+}
+
+#page-encounters--cyborg .ref-insert ul li:nth-child(3) {
+  width: 70%;
+}
+
+#pic-cyborg {
+  background: url('http://localhost:3001/images/zombie-alien-cyborg-wc.png') no-repeat bottom right;
+  background-size: contain;
+  z-index: -1;
+  position: absolute;
+  top: 200px;
+  bottom: 5px;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+
+#pic-crystal-blur-white {
+  background: url('http://localhost:3001/images/crystal-blur-white.png') no-repeat bottom right;
+  background-size: contain;
+  z-index: -1;
+  position: absolute;
+  top: -10px;
+  left: -15%;
+  width: 100%;
+  height: auto;
+  bottom: 500px;
+}
+
+/********************** FUNICULAR SCHEME *****************************/
+#img-map-funicular {
+  height: 32vh;
+  background: url(http://localhost:3001/images/maps/funicular.png) no-repeat top center;
+  background-size: 105%;
+}
+
+/********************** ORNAMENTS *****************************/
+
+.pic-shrooms-corner-1 {
+  background: url('http://localhost:3001/images/shrooms-corner-1.png') no-repeat bottom left;
+  background-size: contain;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1048 / 513;
+}
+.pic-shrooms-corner-2 {
+  background: url('http://localhost:3001/images/shrooms-corner-2.png') no-repeat bottom left;
+  background-size: contain;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 778 / 1203;
+}
+
+.pic-crystals-center {
+  background: url('http://localhost:3001/images/crystals-splatter-center.png') no-repeat center center;
+  background-size: contain;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  aspect-ratio: 1092 / 836;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.pic-basi-five {
+  background: url('http://localhost:3001/images/basimycetes-five.png') no-repeat center center;
+  background-size: contain;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  aspect-ratio: 866 / 589;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.pic-basi-top {
+  background: url('http://localhost:3001/images/basimycetes-top.png') no-repeat center center;
+  background-size: contain;
+  z-index: -1;
+  width: 100%;
+  aspect-ratio: 866 / 484;
+  transform: translateX(-52%);
+}
+
+.pic-crystals-side {
+  background: url('http://localhost:3001/images/crystals-clear-center.png') no-repeat center center;
+  background-size: contain;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  aspect-ratio: 662 / 788;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#pic-a3 {
+  max-height: 100px;
+  margin-top: 4rem;
+  background-position: center;
+}
+
+#pic-a6 {
+  max-height: 70px;
+  margin-top: 1rem;
+  transform: scaleX(-1);
+  background-position-x: right;
+}
+
+#pic-a7 {
+  background-position: center left;
+  max-height: 130px;
+  transform: scaleX(-1);
+  right: auto;
+  left: 0;
+}
+
+#pic-b8 {
+  margin-top: 1rem;
+  max-height: 70px;
+  background-position-x: right;
+}
+
+#pic-b10 {
+  margin-top: 1rem;
+  max-height: 50px;
+  background-position-x: right;
+}
+
+#pic-b10b {
+  margin-top: 3rem;
+  max-height: 210px;
+}
+
+#pic-c2 {
+  margin-top: 8rem;
+  /*transform: scaleX(-1);*/
+}
+
+#pic-c8 {
+  margin-top: 2rem;
+  max-height: 90px;
+}
+
+#pic-c9 {
+  max-height: 220px;
+  bottom: -125px;
+  background-position: right center;
+}
+
+#pic-c10 {
+  max-height: 65px;
+  margin-top: 2.5rem;
+}
+
+#pic-d4 {
+  max-height: 150px;
+}
+
+#pic-e5 {
+  max-height: 220px;
+}
+
+#pic-e7 {
+  margin-top: 2rem;
+  max-height: 205px;
+}
+
+#pic-s2 {
+  background-position: left center;
+  max-height: 180px;
+  transform: scaleX(-1);
+}
+
+#pic-micomant-shrooms {
+  margin-top: 0.5rem;
+  max-height: 65px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}

@@ -1,0 +1,146 @@
+/*************************************************************************/
+/* MAIN THEME */
+/*************************************************************************/
+
+:root {
+  --color-primary: #655a76;
+  --color-secondary: rgba(120, 15, 57, 0.8);
+  --color-accent: #c39861;
+  --color-accent-2: #e6b462;
+  --color-muted: #a9b4c3;
+
+  --color-darker-bg: #a280a2;
+  --color-light-bg: #c7a1c71f;
+
+  /* START OVERRIDES */
+  --color-secondary: #895e89;
+  /*--color-light-bg: #faf9f4;*/
+  /* END OVERRIDES */
+
+  --font-regular: 'Roboto', sans-serif;
+  --font-cursive: 'Philosopher', serif;
+  --font-regular-condensed: 'Fira Sans Condensed', sans-serif;
+  --font-mono: 'Ubuntu Mono', monospace;
+  /*--font-mono: 'PT Mono', monospace;*/
+  /*--font-author-title: 'AuthrorTitle', serif;*/
+  --font-author-title: 'UnifrakturCook', serif;
+  --font-book-title: 'Old Horror Films', serif;
+}
+
+/************************* COVER ********************************/
+
+.page-name--front-cover-main .cover-title-container {
+  margin-top: -28rem;
+}
+
+.page-name--front-cover-main .cover-title-container .cover-title {
+  /*--font-book-title: 'Health Goth', serif;*/
+  font-family: var(--font-book-title);
+  font-size: 60px;
+  line-height: 1;
+  max-width: none;
+  font-weight: normal;
+}
+
+.page-name--front-cover-main .cover-title-container .cover-title.philosopher {
+  font-family: var(--font-book-title);
+  font-size: 42px;
+  line-height: 1.1;
+  max-width: 300px;
+}
+
+.page-name--front-cover-main .cover-title--author {
+  font-family: var(--font-author-title);
+  font-size: 1.6rem;
+}
+
+.page-name--front-cover-main .cover-title--bottom {
+  bottom: 10px;
+}
+
+.page-name--front-cover-main .cover-title--subtitle {
+  font-family: var(--font-regular-condensed);
+  display: none;
+}
+
+#cover-image--main {
+  background-size: 85%;
+  background-position-y: 100px;
+}
+
+/************************************** HealthGoth ***************************/
+.font-HealthGoth #cover-image--main {
+  background-size: 95%;
+  background-position-y: 70px;
+}
+
+.font-HealthGoth .page-name--front-cover-main .cover-title-container .cover-title {
+  /*font-family: var(--font-book-title);*/
+  font-size: 62px;
+  line-height: 1;
+  max-width: none;
+  font-weight: normal;
+}
+
+.font-HealthGoth .page-name--front-cover-main .cover-title-container {
+  margin-top: -26rem;
+}
+
+.font-HealthGoth .cover-title--bottom {
+  bottom: 0px;
+}
+
+/************************************** Brinky ***************************/
+
+.font-Brinky #cover-image--main {
+  background-size: 95%;
+  background-position-y: 70px;
+}
+
+.font-Brinky .cover-title-container .cover-title {
+  --font-book-title: 'Brinky Mono', serif;
+
+  font-family: var(--font-book-title);
+  font-size: 42px;
+  line-height: 1;
+  max-width: none;
+  font-weight: normal;
+}
+
+.font-Brinky .cover-title-container {
+  margin-top: -28rem;
+}
+
+.font-Brinky .cover-title--bottom {
+  bottom: 0px;
+}
+
+/************************************** Old Horror Films ***************************/
+
+.font-OHF #cover-image--main {
+  background-size: 92%;
+  background-position-y: 88px;
+}
+
+.page-name--front-cover-main .font-OHF .cover-title-container .cover-title {
+  --font-book-title: 'Old Horror Films', serif;
+
+  font-family: var(--font-book-title);
+  font-size: 59px;
+  line-height: 0.75;
+  max-width: none;
+  font-weight: normal;
+}
+
+.page-name--front-cover-main .font-OHF .cover-title-container {
+  margin-top: -27rem;
+}
+
+.page-name--front-cover-main .font-OHF .cover-title--bottom {
+  bottom: -3px;
+}
+
+.page-name--front-cover-bestiary .cover-title--author {
+  font-family: var(--font-author-title);
+  font-size: 1.6rem;
+}

@@ -1,0 +1,168 @@
+.page--wrapper:is(.page--bestiary, .page--bestiary-osr):not(
+    .page-name--toc,
+    .page-name--front-cover-bestiary,
+    .page-name--title-bestiary,
+    .page-name--back-cover
+  ) {
+  page: landscape_page;
+}
+
+/* Disable header and footer for title page */
+.page-name--title-bestiary {
+  page: map_image;
+  background: #fff;
+  height: 100%;
+
+  .title-page--title {
+    margin-top: 8rem;
+  }
+}
+
+.page--bestiary,
+.page--bestiary-osr {
+  --blocks-margin: 1rem;
+  --list-blocks-margin: 0.5rem;
+
+  h2 {
+    @apply text-3xl;
+    @apply mb-4 mt-0;
+    line-height: 2.25rem;
+    column-span: all;
+  }
+
+  h2::after {
+    content: none;
+  }
+
+  .ref-insert .ref-header ~ main,
+  .ref-insert main ul,
+  .ref-insert main ul li,
+  .two-columns .ref-insert main p {
+    break-inside: avoid;
+  }
+
+  .ref-insert {
+    break-inside: avoid;
+  }
+
+  /* Notes */
+  .room-section.heading-0 {
+    ul:not(#block-range-encounters ul) li {
+      margin-bottom: var(--blocks-margin);
+    }
+
+    h3,
+    h3 + .ref-insert {
+      display: none;
+    }
+  }
+
+  /* Every stats block (Clone, Gregor, Copycat etc.) */
+  section.ref-insert.alternative[id] {
+    margin-bottom: 2rem;
+
+    ul {
+      break-inside: avoid-page !important;
+
+      li {
+        margin-bottom: var(--list-blocks-margin);
+        break-inside: avoid !important;
+      }
+    }
+  }
+
+  /* Every ITEM section */
+  #heading-26 ~ .ref-insert {
+    break-inside: avoid-page;
+    margin-bottom: 1.5rem;
+  }
+
+  .ref-insert ul li {
+    break-inside: avoid;
+  }
+
+  .ref-insert .list-to-table--converted {
+    break-before: avoid;
+  }
+
+  #zenica-soznaniya {
+    padding-top: 35rem;
+
+    ul {
+      li {
+        margin-bottom: initial;
+      }
+    }
+  }
+
+  #trup-sluga-uu {
+    --paraghraph-margin: 0 0 0.4rem 0;
+
+    p,
+    ul,
+    li {
+      font-size: 0.825rem !important;
+    }
+
+    ul {
+      li {
+        margin-bottom: initial;
+      }
+    }
+  }
+
+  #ps-grib {
+    padding-top: 35rem;
+
+    ul,
+    li {
+      break-inside: avoid !important;
+    }
+
+    .list-to-table--converted {
+      break-before: auto !important;
+    }
+  }
+
+  /* Кольцо Возрождения */
+  #kolco-vozrozhdeniya {
+    break-inside: auto;
+
+    .list-to-table--converted {
+      break-before: auto;
+    }
+
+    table {
+      break-inside: avoid;
+    }
+  }
+
+  #shestilap {
+    .pic-monster-rat {
+      max-height: initial;
+    }
+  }
+
+  #yashcher {
+    position: relative;
+
+    .pic-monster-lizard {
+      position: absolute;
+      right: -240px;
+      top: 0;
+      display: block;
+
+      /*max-height: 165px;*/
+    }
+  }
+
+  #kiborg-zombi-prishelec {
+    .pic-monster-cyborg {
+      display: block;
+    }
+  }
+
+  #shchupalca {
+    margin-bottom: 20rem;
+  }
+}

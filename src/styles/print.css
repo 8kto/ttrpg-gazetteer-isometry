@@ -1,0 +1,172 @@
+:root {
+  --page-w: 108mm;
+  --page-h: 140mm;
+  --magic-margin-val: 11px;
+}
+
+@media print {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  @page {
+    size: 108mm 140mm;
+    /*size: 105mm 148mm;*/
+    margin: var(--page-margin-top) var(--page-margin-right) var(--page-margin-bottom) var(--page-margin-left);
+  }
+
+  html {
+    font-size: 10px; /* new base for relative font sizes */
+  }
+
+  body {
+    @apply py-0;
+  }
+
+  #header {
+    background: #2f4f4f !important;
+  }
+
+  .full-content-container {
+    /*padding: 40px;*/
+  }
+
+  /* FIXME */
+  @page :first {
+    margin: 0;
+    background: #000;
+  }
+
+  /*.page {*/
+  /*  overflow: hidden;*/
+  /*  page-break-after: always; !* NB !!!*!*/
+  /*}*/
+
+  @page fullpage_image {
+    margin: 0;
+  }
+
+  @page landscape_page {
+    size: 148mm 105mm;
+  }
+
+  .page--wrapper {
+    /*break-after: always;*/
+  }
+
+  main {
+    width: 100%;
+    @apply text-sm;
+  }
+
+  h1 {
+    page-break-before: always;
+  }
+
+  figure {
+    page-break-inside: avoid; /* Prevent from breaking across pages */
+  }
+
+  small {
+    @apply text-xs;
+  }
+
+  .no-print {
+    display: none;
+  }
+
+  .page-top-header,
+  .page-bottom-footer {
+    display: none;
+  }
+
+  /* OLD */
+  .page-delimiter {
+    page-break-after: always;
+    /*page-break-after: auto;*/
+  }
+
+  /* NEW */
+  .page-delimiter {
+    page-break-after: auto;
+  }
+
+  .page-delimiter + .page--wrapper {
+    page-break-before: always;
+  }
+
+  /* END NEW */
+
+  .page-break {
+    page-break-before: always;
+    break-before: page;
+    /*page-break-after: always;*/
+    /*break-after: page;*/
+    column-span: all;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  h2,
+  h3,
+  h2 + blockquote {
+    break-after: avoid;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    page-break-after: avoid;
+  }
+}
+
+@media print and (color) {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/* styles for all media except print */
+@media not print {
+  body {
+    background: #eee;
+  }
+
+  main.print-root {
+    text-align: center;
+  }
+
+  .page--wrapper {
+    --scale-factor: 2;
+
+    width: calc(var(--page-width) * var(--scale-factor));
+    /*height: calc((var(--page-height) - var(--page-margin-top) - var(--page-margin-bottom)) * var(--scale-factor));*/
+    min-height: calc((var(--page-height) - var(--page-margin-top) - var(--page-margin-bottom)) * var(--scale-factor));
+    box-sizing: border-box;
+    padding: var(--page-margin-top) var(--page-margin-right) var(--page-margin-bottom) var(--page-margin-left);
+
+    background: white;
+    margin: 0 auto 10mm;
+    position: relative;
+
+    outline: 1px dashed rgba(0, 0, 0, 0.4);
+  }
+
+  .page--wrapper:has(.page-tpl--map) {
+    padding: 0 !important;
+    width: 795px !important;
+    height: 1120px !important;
+  }
+
+  .main-content {
+    text-align: left;
+    width: 100%;
+  }
+}

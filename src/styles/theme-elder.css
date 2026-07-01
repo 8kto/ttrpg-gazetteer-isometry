@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*************************************************************************/
+/* LEGACY THEME */
+/*************************************************************************/
+
+:root {
+  --color-primary: #655a76;
+  --color-darker-bg: rgba(120, 45, 42, 0.29);
+  --color-secondary: rgba(120, 15, 57, 0.8);
+  --color-muted: #a9b4c3;
+  --color-accent-2: #e6b462;
+  --color-light-bg: #c7a1c71f;
+
+  --font-regular: 'Roboto', sans-serif;
+  --font-cursive: 'Philosopher', serif;
+  --font-author-title: 'AuthrorTitle', serif;
+  --font-regular-condensed: 'Fira Sans Condensed', sans-serif;
+
+  --color-map-label: #ff2e88;
+  --color-map-font: Playfair Display;
+}

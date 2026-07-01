@@ -1,0 +1,75 @@
+@import 'theme-futuristic-flesh.css';
+
+/*************************************************************************/
+/* THEME WITH NON-FREE ART. NOT FOR SHARING. */
+/*************************************************************************/
+
+:root {
+  --font-book-title: 'BookTitle', serif;
+  --font-author-title: 'UnifrakturCook', serif;
+}
+
+/************************* COVER ********************************/
+
+.cover-title-container {
+  margin-top: -28rem;
+}
+
+.cover-title-container .cover-title {
+  font-size: 17rem;
+  line-height: 1;
+  /*max-width: 300px;*/
+  font-family: var(--font-book-title);
+  font-weight: normal;
+}
+
+.cover-title--author {
+  font-family: var(--font-cursive);
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+.cover-title--author {
+  font-family: var(--font-author-title);
+  font-size: 1.6rem;
+}
+
+.cover-title--bottom {
+  bottom: 10px;
+}
+
+.cover-title--subtitle {
+  display: none;
+}
+
+#cover-image--main {
+  background-image: url('http://localhost:3001/images/copyright/zb-cover.jpg');
+  background-size: cover;
+  background-position-y: center;
+}
+
+#cover-image--back {
+  background-image: url('http://localhost:3001/images/copyright/zb-pinturas-60-00--41.jpg');
+  background-size: cover;
+  background-position-y: center;
+}
+
+.back-cover-text-container {
+  background: rgba(255, 255, 255, 0.6);
+  color: #474537;
+  border-color: #fff;
+}
+
+/************************* ART ********************************/
+
+#img-desert {
+  height: 58vh;
+  background: url(http://localhost:3001/images/copyright/zb-pinturas-60-00--42.jpg) no-repeat top center;
+  background-size: 100%;
+}
+
+#tentacles-horror {
+  height: 60vh;
+  background: url(http://localhost:3001/images/copyright/tentacles-horror.jpg) no-repeat top center;
+  background-size: 110%;
+}

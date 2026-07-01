@@ -1,0 +1,213 @@
+.page-name--license main,
+.page-name--license h1 {
+  font-size: 6px;
+  line-height: 1.2;
+}
+
+.page-name--module .two-columns.content p,
+.page-name--main-things .two-columns.content p {
+  page-break-inside: auto;
+}
+
+.title-sub-paragraph {
+  margin-top: 15rem;
+}
+
+.page-name--info h1 {
+  line-height: 1;
+}
+
+.page-name--info .content .room-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+#stats-f-snake {
+  z-index: 99;
+}
+
+.page-name--brief {
+  ul {
+    margin-bottom: 0.25rem;
+  }
+}
+
+#stats-simak {
+  /* Make spores cloud look like a damage prop */
+  ul li:nth-of-type(3) strong {
+    color: var(--color-secondary);
+    font-weight: normal;
+    border-bottom: 1px solid rgba(120, 15, 57, 0.35);
+  }
+}
+
+.m-brick {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 30px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+#m-brick-1 {
+  background: #82b4d3;
+  top: 560px;
+}
+#m-brick-2 {
+  background: #e97451;
+  top: 1075px;
+}
+
+/******************* TABLES **********************/
+
+#shrooms-table thead th:first-of-type,
+#shrooms-table tbody td:first-of-type {
+  /*@apply text-left pl-2.5 pr-0;*/
+}
+
+#shrooms-table thead th:nth-of-type(2),
+#shrooms-table tbody td:nth-of-type(2) {
+  /*@apply align-middle;*/
+}
+
+.page-name--area-e--rest {
+  /* Зеница */
+  .content > .ref-insert:first-of-type .ref-header {
+    column-span: all;
+  }
+}
+
+.page--main.page-name--area-e--rest {
+  /* Зеница */
+  .content > .ref-insert:first-of-type li {
+    margin-bottom: 5px;
+  }
+}
+
+.page-name--back-cover h1,
+.page-name--back-cover a {
+  color: var(--color-secondary);
+}
+
+.page-name--area-a--shrooms-mechs .content ul + h3 {
+  margin-top: 0.8rem;
+}
+
+#block-range-encounters {
+  padding: 0.75rem;
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  .ref-header {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .ref-header::after {
+    content: none;
+  }
+}
+
+/*************** PAGES 2COLs TUNING **************/
+
+.page-name--area-a--rest-rest {
+  .two-columns {
+    column-fill: auto;
+    /*background: #e97451;*/
+  }
+
+  .content {
+    box-sizing: border-box;
+    height: calc(var(--page-h) - var(--page-margin-top) - var(--page-margin-bottom) + var(--magic-margin-val));
+    overflow: hidden;
+  }
+}
+
+#stats-psi-shroom {
+  p {
+    margin-bottom: 0.4rem;
+  }
+
+  .stats-insert {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+
+  table tbody td {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
+#page-micomant {
+  p + h3 {
+    margin-top: 1rem;
+  }
+
+  sup {
+    color: var(--color-muted);
+  }
+
+  .list-micomant-symbols {
+    em {
+      color: var(--color-darker-bg);
+      font-style: normal;
+    }
+
+    ul {
+      padding-left: 0;
+    }
+
+    ul li {
+      list-style: none;
+      padding-left: 0;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+}
+
+.page--main {
+  #page-encounters {
+    h1 + * {
+      margin-bottom: 0.25rem;
+    }
+
+    #table-random-encounters table {
+      margin-bottom: 0;
+    }
+
+    .OFF {
+      #block-notes-encounters {
+        li {
+          break-inside: auto;
+        }
+      }
+
+      #stats-rat,
+      #stats-bones-chimaera {
+        --paraghraph-margin: 0 0 0.65rem 0;
+
+        .stats-insert {
+          margin-top: 0.2rem;
+          margin-bottom: 0.2rem;
+        }
+      }
+    }
+  }
+
+  #page-micomant {
+    h3:nth-of-type(4) {
+      padding-top: 0.5rem;
+    }
+  }
+}
+
+#heading-51 + p {
+  break-inside: avoid;
+}

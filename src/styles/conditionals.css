@@ -1,0 +1,65 @@
+.conditional-block {
+  display: none;
+}
+
+.conditional-block--with-margin {
+  margin: var(--paraghraph-margin);
+}
+
+/* always hide the 2nd stats */
+.ref-insert {
+  .stats-insert:nth-of-type(2) {
+    display: none;
+  }
+}
+
+.page--main {
+  .conditional-block--main {
+    display: revert;
+  }
+
+  .ref-insert .stats-insert:nth-of-type(1) {
+    display: block;
+  }
+  .ref-insert .stats-insert:nth-of-type(2) {
+    display: none;
+  }
+}
+
+.page--osr {
+  .conditional-block--osr {
+    display: revert;
+  }
+
+  .ref-insert .stats-insert:nth-of-type(1) {
+    display: none;
+  }
+  .ref-insert .stats-insert:nth-of-type(2) {
+    display: block;
+  }
+}
+
+.page--bestiary {
+  .conditional-block--main {
+    display: revert;
+  }
+
+  .ref-insert .stats-insert:nth-of-type(1) {
+    display: block;
+  }
+  .ref-insert .stats-insert:nth-of-type(2) {
+    display: none;
+  }
+}
+
+.page--bestiary-osr {
+  .conditional-block--osr {
+    display: revert;
+  }
+  .ref-insert .stats-insert:nth-of-type(1) {
+    display: none;
+  }
+  .ref-insert .stats-insert:nth-of-type(2) {
+    display: block;
+  }
+}

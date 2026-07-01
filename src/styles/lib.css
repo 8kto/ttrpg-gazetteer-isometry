@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-text-default: #333;
+
+  --color-map-label: #ff2e88;
+  --color-map-font: Playfair Display;
+
+  --paraghraph-margin: 0 0 0.65rem 0;
+
+  /* Print @page */
+  --page-width: 105mm;
+  --page-height: 148mm;
+  --page-margin-top: 30px;
+  --page-margin-right: 35px;
+  --page-margin-bottom: 25px;
+  --page-margin-left: 35px;
+}
