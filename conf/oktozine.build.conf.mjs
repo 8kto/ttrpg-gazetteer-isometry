@@ -63,8 +63,6 @@ const config = {
     '$refs-items.md',
     '$notes.md',
     'server.html',
-    '0000-cover.md',
-    '0005-title-map.md',
   ],
   referenceFiles: ['src/markdown/$refs-stats.md', 'src/markdown/$refs-items.md', 'src/markdown/$refs-blocks.md'],
   draftWatermarkHtml: '<strong>Черновая версия, не для распространения</strong>',
