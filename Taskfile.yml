@@ -1,0 +1,67 @@
+version: '3'
+
+vars:
+  BUILD_DIR: build
+  RELEASE_BUILD_DIR: build/release
+  CSS_INPUT: ./src/styles/styles.css
+  CSS_OUTPUT: ./build/output.css
+
+tasks:
+  default:
+    cmds:
+      - task --list
+
+  banner:
+    internal: true
+    silent: true
+    cmds:
+      - |
+        NO_FORMAT="\033[0m"
+        F_BOLD="\033[1m"
+        F_INVERT="\033[7m"
+        C_RED3="\033[38;5;160m"
+        C_WHITE="\033[48;5;15m"
+        echo -e "\n${F_BOLD}${F_INVERT}${C_RED3}${C_WHITE} {{.TEXT}} ${NO_FORMAT}\n"
+
+  clean:
+    desc: Remove build output
+    cmds:
+      - rimraf {{.BUILD_DIR}}
+
+  clean:release:
+    desc: Clean release build directory
+    cmds:
+      - node scripts/release/clean-build.mjs --dir {{.RELEASE_BUILD_DIR}}
+
+  styles:
+    desc: Build Tailwind CSS
+    cmds:
+      - npx tailwindcss -i {{.CSS_INPUT}} -o {{.CSS_OUTPUT}}
+
+  build:
+    desc: 'Build a module. Usage: task build -- main|map|osr|bestiary|bestiary-osr'
+    deps:
+      - styles
+    vars:
+      TARGET: '{{default "main" .CLI_ARGS}}'
+    cmds:
+      - oktozine {{.TARGET}} --html-no-skip
+
+  build:all:
+    desc: Build all modules and bestiaries
+    deps:
+      - styles
+    cmds:
+      - task: clean
+      - task: styles
+      - oktozine --html-no-skip
+
+  release-check:
+    desc: Check release readiness
+    cmds:
+      - node scripts/release/check-release.mjs {{.CLI_ARGS}}
+
+  release:
+    desc: Run release
+    cmds:
+      - ./scripts/release/release.sh {{.CLI_ARGS}}
