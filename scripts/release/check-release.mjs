@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* eslint-disable no-console, func-style, jsdoc/require-param-type */
+/* eslint-disable no-console, func-style */
 import { spawnSync } from 'node:child_process'
 import fs from 'node:fs'
 import { createRequire } from 'node:module'

@@ -22,12 +22,14 @@ function sanitizeSnapshotName(name) {
   let s = String(name).trim()
 
   // Replace path separators with spaces
+  // eslint-disable-next-line no-useless-escape
   s = s.replace(/[\/\\]/g, ' ')
 
   // Collapse dot-dot segments
   s = s.replace(/\.\.+/g, '.')
 
   // Remove control characters
+  // eslint-disable-next-line no-control-regex
   s = s.replace(/[\u0000-\u001F\u007F]/g, '')
 
   // Trim and collapse whitespace
