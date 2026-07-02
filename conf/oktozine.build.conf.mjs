@@ -3,9 +3,7 @@
 /** @type {ITocOverrides} */
 const mainTocConf = {
   dropLabels: ['Зловещая Изометрия: газетир', 'Содержание'],
-  dropItemsFromLabels: [
-    'Благодарности и техническая информация',
-  ],
+  dropItemsFromLabels: ['Благодарности и техническая информация'],
   alwaysInclude: [],
 }
 
@@ -57,13 +55,7 @@ const config = {
   webServerPort: 3001,
   keepWebServer: true,
   invalidateBuildOnPattern: /\$refs-/,
-  skipped: [
-    '$refs-blocks.md',
-    '$refs-stats.md',
-    '$refs-items.md',
-    '$notes.md',
-    'server.html',
-  ],
+  skipped: ['$refs-blocks.md', '$refs-stats.md', '$refs-items.md', '$notes.md', 'server.html'],
   referenceFiles: ['src/markdown/$refs-stats.md', 'src/markdown/$refs-items.md', 'src/markdown/$refs-blocks.md'],
   draftWatermarkHtml: '<strong>Черновая версия, не для распространения</strong>',
   chapterRefPattern: 'A-FPQS',
@@ -71,9 +63,7 @@ const config = {
     rootId: 'toc-main',
   },
   skipHeaderAndFooter: [1, -1],
-  documents: [
-    /** @type {IDocumentConfig} */ (mainModuleConf),
-  ],
+  documents: [/** @type {IDocumentConfig} */ (mainModuleConf)],
 }
 
 export default config
