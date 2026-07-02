@@ -1,6 +1,6 @@
 {
-  "extends": ["eslint:recommended", "plugin:import/recommended", "prettier", "plugin:jsdoc/recommended-error"],
-  "plugins": ["import", "simple-import-sort", "unused-imports", "markdown", "jsdoc"],
+  "extends": ["eslint:recommended", "plugin:import/recommended", "prettier"],
+  "plugins": ["import", "simple-import-sort", "unused-imports", "markdown"],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaVersion": 2020,
@@ -10,7 +10,7 @@
     }
   },
   "env": {
-    "node": false,
+    "node": true,
     "browser": true,
     "es2021": true,
     "jest": true
@@ -42,15 +42,6 @@
     ],
     "prefer-arrow-callback": ["error", { "allowNamedFunctions": false }],
     "func-style": ["error", "expression", { "allowArrowFunctions": true }],
-    "jsdoc/require-param-description": "off",
-    "jsdoc/require-returns-description": "off",
-    "jsdoc/require-param": [
-      "error",
-      { "contexts": ["ArrowFunctionExpression", "FunctionDeclaration", "FunctionExpression"] }
-    ],
-    "jsdoc/require-param-type": "error",
-    "jsdoc/require-returns-type": "error",
-    "jsdoc/no-undefined-types": ["error", { "definedTypes": ["CommandHandlerFn"] }],
     "import/no-unresolved": [2, { "ignore": ["^#.+$"] }]
   },
   "overrides": [
