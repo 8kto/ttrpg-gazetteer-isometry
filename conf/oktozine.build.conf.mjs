@@ -48,7 +48,7 @@ const mainModuleConf = {
 const config = {
   version: '2',
   releaseDocumentIds: ['main'],
-  template: 'two-columns.html',
+  template: 'one-column.html',
   footer: '2026, undefined Okto',
   header: 'Зловещая Изометрия: газетир',
   cssPath: 'build/output.css',
