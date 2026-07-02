@@ -163,7 +163,7 @@ ul li {
 }
 
 .content h1 + h2 {
-  @apply mt-0 mb-1.5;
+  @apply mb-1.5 mt-0;
 }
 
 .page-top-header {

@@ -94,7 +94,7 @@
 }
 
 .area-intro-block--map ul {
-  @apply pl-5 columns-2 gap-8;
+  @apply columns-2 gap-8 pl-5;
 }
 
 .area-intro-block--map ul > li {
@@ -255,7 +255,7 @@
   background-image: /*linear-gradient(rgba(255, 255, 255, var(--opacity)), rgba(255, 255, 255, var(--opacity))),*/
     linear-gradient(rgba(0, 0, 0, var(--opacity)), rgba(0, 0, 0, var(--opacity))),
     /*url('http://localhost:3001/images/fragments/bg-veins-wall.png');*/
-      url('http://localhost:3001/images/fragments/bg-tentacles.png');
+    url('http://localhost:3001/images/fragments/bg-tentacles.png');
   background-size: cover;
   background-position:
     center center,
@@ -292,8 +292,8 @@
   background-image:
     linear-gradient(rgba(255, 255, 255, var(--opacity)), rgba(255, 255, 255, var(--opacity))),
     /*linear-gradient(rgba(190, 168, 144, var(--opacity)), rgba(190, 168, 144, var(--opacity))),*/
-      /*url('http://localhost:3001/images/fragments/bg-fractal.png');*/
-      url('http://localhost:3001/images/fragments/bg-abo.png');
+    /*url('http://localhost:3001/images/fragments/bg-fractal.png');*/
+    url('http://localhost:3001/images/fragments/bg-abo.png');
   background-size: cover;
   background-position:
     center center,

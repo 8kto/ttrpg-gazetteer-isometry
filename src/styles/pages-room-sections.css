@@ -6,7 +6,7 @@
   h4,
   h5,
   h6 {
-    @apply mt-0 mb-1.5;
+    @apply mb-1.5 mt-0;
   }
 }
 

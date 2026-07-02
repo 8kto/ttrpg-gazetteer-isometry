@@ -144,7 +144,7 @@
 /******** ALTERNATIVE (INLINED) ************************************/
 
 .ref-insert.alternative {
-  @apply border-none p-0 my-3;
+  @apply my-3 border-none p-0;
   color: var(--color-text-default);
   background: none;
 }
