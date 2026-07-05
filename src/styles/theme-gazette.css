@@ -1,7 +1,7 @@
 :root {
   --color-accent: #c39861;
   --color-accent-2: #e6b462;
-  --color-darker-bg: #a280a2;
+  --color-darker-bg: #a68b6a;
   --color-light-bg: #c7a1c71f;
   --color-primary: #b87333;
   --color-secondary: #a68b6a;
@@ -40,6 +40,7 @@
   font-weight: normal;
   font-family: var(--font-author-title);
   font-size: 1.6rem;
+  margin-top: 48rem !important;
 }
 
 .cover-title--bottom {
