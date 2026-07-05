@@ -17,6 +17,19 @@
 
 <!-- page-break /-->
 
+## Карта
+
+Интерактивная карта с границами государств и важными городами:
+[rpg.ivlev.blog/isometry-setting-map/](https://rpg.ivlev.blog/isometry-setting-map/)
+
+<img
+class=""
+src="{{imagesSrc}}/map.png"
+alt=""
+/>
+
+<!-- page-break /-->
+
 ## Хеттская Великая Империя
 
 Провинции и их крупные города:
