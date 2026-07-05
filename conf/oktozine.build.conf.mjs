@@ -25,7 +25,7 @@ const mainModuleConf = {
   coverHtmlFile: '0000-cover.md',
   backCoverHtmlFile: '9999-back-cover.md',
   include: [],
-  skipped: [],
+  skipped: ['0500-rumors.md', '0200-desert.md', '1500-names.md'],
   tocConfig: {
     headersSelector: 'h1:not([data-skip-toc]), h2:not([data-skip-toc]), h3, h4, h5',
     rootClassName: 'toc--main',
