@@ -22,7 +22,7 @@ const mainModuleConf = {
   documentTitle: 'Зловещая Изометрия: газетир',
   documentFileName: 'Зловещая Изометрия: газетир ({{version}}).pdf',
   header: 'Зловещая Изометрия: газетир',
-  coverHtmlFile: '0000-cover.md',
+  coverHtmlFile: '0010-cover.md',
   backCoverHtmlFile: '9999-back-cover.md',
   include: [],
   skipped: ['0500-rumors.md', '0200-desert.md', '1500-names.md'],
