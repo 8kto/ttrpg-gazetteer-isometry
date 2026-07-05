@@ -1,18 +1,31 @@
-@import 'theme-futuristic-flesh.css';
-
-/*************************************************************************/
-/* THEME WITH NON-FREE ART. NOT FOR SHARING. */
-/*************************************************************************/
-
 :root {
+  --color-accent: #c39861;
+  --color-accent-2: #e6b462;
+  --color-darker-bg: #a280a2;
+  --color-light-bg: #c7a1c71f;
+  --color-primary: #b87333;
+  --color-secondary: #a68b6a;
+  --color-secondary-bg: #eed5b7;
+  --color-muted: #ddd;
+  --color-muted-text: #e3ab67ff;
+  --color-light-bg: rgba(238, 213, 183, 0.25);
+  --color-lighter-bg: rgba(238, 213, 183, 0.1);
+
+  --font-regular: 'Roboto', sans-serif;
+  --font-cursive: 'El Messiri', serif;
   --font-book-title: 'BookTitle', serif;
   --font-author-title: 'UnifrakturCook', serif;
+  --font-regular-condensed: 'Fira Sans Condensed', sans-serif;
+  --font-mono: 'Ubuntu Mono', monospace;
+
+  --color-map-label: #be0035;
+  --color-map-font: Playfair Display;
 }
 
 /************************* COVER ********************************/
 
 .cover-title-container {
-  margin-top: -28rem;
+  /*margin-top: -28rem;*/
 }
 
 .cover-title-container .cover-title {
@@ -43,13 +56,13 @@
 }
 
 #cover-image--main {
-  background-image: url('http://localhost:3001/images/copyright/zb-cover.jpg');
+  /*background-image: url('http://localhost:3001/images/copyright/zb-cover.jpg');*/
   background-size: cover;
   background-position-y: center;
 }
 
 #cover-image--back {
-  background-image: url('http://localhost:3001/images/copyright/zb-pinturas-60-00--41.jpg');
+  /*background-image: url('http://localhost:3001/images/copyright/zb-pinturas-60-00--41.jpg');*/
   background-size: cover;
   background-position-y: center;
 }
@@ -58,18 +71,4 @@
   background: rgba(255, 255, 255, 0.6);
   color: #474537;
   border-color: #fff;
-}
-
-/************************* ART ********************************/
-
-#img-desert {
-  height: 58vh;
-  background: url(http://localhost:3001/images/copyright/zb-pinturas-60-00--42.jpg) no-repeat top center;
-  background-size: 100%;
-}
-
-#tentacles-horror {
-  height: 60vh;
-  background: url(http://localhost:3001/images/copyright/tentacles-horror.jpg) no-repeat top center;
-  background-size: 110%;
 }

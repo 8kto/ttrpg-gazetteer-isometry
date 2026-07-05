@@ -32,15 +32,16 @@ h1 {
 }
 
 h2 {
-  @apply text-xl;
-  @apply mb-3 mt-3;
+  @apply text-2xl;
+  @apply mb-3 mt-5;
   line-height: 1.5rem;
   border-color: var(--color-primary);
+  margin-top: 1.25rem !important;
 }
 
 h3 {
-  @apply text-xl;
-  @apply mb-1 mt-2;
+  @apply text-lg;
+  @apply mb-1 mt-3;
   @apply font-semibold;
   border-color: var(--color-primary);
   line-height: 1.25rem;
@@ -159,7 +160,7 @@ ul li {
 .content h3:first-of-type,
 .content h4:first-of-type,
 .content h5:first-of-type {
-  @apply mt-0;
+  /*@apply mt-0;*/
 }
 
 .content h1 + h2 {

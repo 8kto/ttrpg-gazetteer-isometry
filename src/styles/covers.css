@@ -9,17 +9,10 @@
 }
 
 #cover-image--back {
-  background-image: url('http://localhost:3001/images/covers/Haeckel_Basimycetes.jpg');
+  /*background-image: url('http://localhost:3001/images/covers/Haeckel_Basimycetes.jpg');*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-#cover-image--bestiary {
-  background:
-    url('http://localhost:3001/images/covers/crystals-bg--opt.png') center no-repeat,
-    /*url('http://localhost:3001/images/horror-portal-opt.jpg') center no-repeat,*/ #000;
-  background-size: 120%;
 }
 
 /******************* FRONT COVER **********************/
@@ -219,7 +212,7 @@
 }
 
 .page-name--front-cover-bestiary .font-OHF .cover-title-container {
-  margin-top: -24rem;
+  /*margin-top: -24rem;*/
 }
 
 .page-name--front-cover-bestiary .font-OHF .cover-title--bottom {

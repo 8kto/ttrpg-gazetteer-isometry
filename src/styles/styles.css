@@ -11,12 +11,11 @@
 @import url('./map-links.css');
 @import url('./pics.css');
 @import url('./pages.css');
-@import url('./pages-bestiary.css');
 @import url('./pages-osr.css');
 @import url('./pages-room-sections.css');
 @import url('./print.css');
 @import url('./conditionals.css');
 
 /*@import url('./theme-elder.css');*/
-@import url('./theme-futuristic-flesh.css');
-/*@import url('./theme-personal.css');*/
+/*@import url('./theme-futuristic-flesh.css');*/
+@import url('./theme-gazette.css');
