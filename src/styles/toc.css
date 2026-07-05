@@ -1,6 +1,7 @@
 /* Global li styles */
 .toc-nav li {
   list-style: none;
+  font-size: 1.25rem;
 }
 
 .toc-nav ul,
@@ -56,22 +57,4 @@
 
 .toc-nav a:is([href^='#a-'], [href^='#b-'], [href^='#c-'], [href^='#d-'], [href^='#e-'], [href^='#s-']) {
   color: var(--color-accent);
-}
-
-/********** BESTIARY ******************/
-.toc--bestiary {
-  ul {
-    font-size: 1.1rem;
-  }
-
-  .level-1 {
-    color: var(--color-accent);
-  }
-
-  a.show-urls::after {
-    content: ' (' attr(href) ')';
-    font-size: 0.7em;
-    vertical-align: super;
-    text-transform: uppercase;
-  }
 }
