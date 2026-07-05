@@ -37,12 +37,7 @@
 }
 
 .cover-title--author {
-  font-family: var(--font-cursive);
   font-weight: normal;
-  font-size: 1.4rem;
-}
-
-.cover-title--author {
   font-family: var(--font-author-title);
   font-size: 1.6rem;
 }
@@ -55,13 +50,7 @@
   display: none;
 }
 
-#cover-image--main {
-  /*background-image: url('http://localhost:3001/images/copyright/zb-cover.jpg');*/
-  background-size: cover;
-  background-position-y: center;
-}
-
-#cover-image--back {
+#cover-image {
   /*background-image: url('http://localhost:3001/images/copyright/zb-pinturas-60-00--41.jpg');*/
   background-size: cover;
   background-position-y: center;

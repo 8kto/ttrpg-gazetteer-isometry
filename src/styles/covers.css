@@ -4,8 +4,9 @@
 /******************* PICTURES **********************/
 
 #cover-image--main {
-  background-image: url('http://localhost:3001/images/covers/fungi-black.png');
+  background-image: url('http://localhost:3001/images/covers/alt-cover.png');
   /*background-image: url('http://localhost:3001/images/covers/FungiBlackCover.png');*/
+  background-size: cover;
 }
 
 #cover-image--back {
