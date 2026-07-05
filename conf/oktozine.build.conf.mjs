@@ -39,7 +39,7 @@ const mainModuleConf = {
   },
   buildPartSize: 8,
   buildProcessesNum: 1,
-  skipHeaderAndFooter: [-1, 1],
+  skipHeaderAndFooter: [-1, 1, 2, 3],
   skipFooter: [],
   macros: [],
 }
