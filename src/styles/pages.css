@@ -211,3 +211,15 @@
 #heading-51 + p {
   break-inside: avoid;
 }
+
+.page-name--world {
+  ul li {
+    ul li {
+      color: var(--color-secondary);
+    }
+  }
+}
+
+.no-nested-list-styles ul li ul li {
+  color: inherit;
+}
