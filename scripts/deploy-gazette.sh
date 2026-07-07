@@ -24,7 +24,7 @@ fi
 mkdir -p /tmp/isometry-gaz-deploy
 rm -rf /tmp/isometry-gaz-deploy/*
 
-rsync -av --exclude='*.test.ts' --exclude='*.test.ts.snap' build/release/*газетир*.pdf /tmp/isometry-gaz-deploy/
+rsync -av --exclude='*.test.ts' --exclude='*.test.ts.snap' build/release/*газетир*.pdf /tmp/isometry-gaz-deploy/isometry-gazetteer.pdf
 
 # Deploy to remote server
 echo "DEPLOY_SSH_PORT: $DEPLOY_SSH_PORT"
