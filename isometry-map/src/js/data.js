@@ -1,18 +1,18 @@
 var bronzeAgeGeoJSON = {
-  type: "FeatureCollection",
+  type: 'FeatureCollection',
   features: [
     {
-      type: "Feature",
+      type: 'Feature',
       properties: {
-        NAME: "Egypt",
-        ABBREVN: "Egypt",
-        SUBJECTO: "Egypt",
+        NAME: 'Egypt',
+        ABBREVN: 'Egypt',
+        SUBJECTO: 'Egypt',
         TYPE: null,
         BORDERPRECISION: 1,
-        PARTOF: "Egypt",
+        PARTOF: 'Egypt',
       },
       geometry: {
-        type: "MultiPolygon",
+        type: 'MultiPolygon',
         coordinates: [
           [
             [
@@ -57,17 +57,17 @@ var bronzeAgeGeoJSON = {
       },
     },
     {
-      type: "Feature",
+      type: 'Feature',
       properties: {
-        NAME: "Elam",
-        ABBREVN: "Elam",
-        SUBJECTO: "Elam",
+        NAME: 'Elam',
+        ABBREVN: 'Elam',
+        SUBJECTO: 'Elam',
         TYPE: null,
         BORDERPRECISION: 1,
-        PARTOF: "Elam",
+        PARTOF: 'Elam',
       },
       geometry: {
-        type: "MultiPolygon",
+        type: 'MultiPolygon',
         coordinates: [
           [
             [
@@ -135,17 +135,17 @@ var bronzeAgeGeoJSON = {
       },
     },
     {
-      type: "Feature",
+      type: 'Feature',
       properties: {
-        NAME: "Kingdom of David and Solomon",
-        ABBREVN: "Kingdom of David and Solomon",
-        SUBJECTO: "Kingdom of David and Solomon",
-        TYPE: "kingdom",
+        NAME: 'Kingdom of David and Solomon',
+        ABBREVN: 'Kingdom of David and Solomon',
+        SUBJECTO: 'Kingdom of David and Solomon',
+        TYPE: 'kingdom',
         BORDERPRECISION: 1,
-        PARTOF: "Kingdom of David and Solomon",
+        PARTOF: 'Kingdom of David and Solomon',
       },
       geometry: {
-        type: "MultiPolygon",
+        type: 'MultiPolygon',
         coordinates: [
           [
             [
@@ -210,17 +210,17 @@ var bronzeAgeGeoJSON = {
       },
     },
     {
-      type: "Feature",
+      type: 'Feature',
       properties: {
-        NAME: "Kush",
-        ABBREVN: "Kush",
-        SUBJECTO: "Kush",
+        NAME: 'Kush',
+        ABBREVN: 'Kush',
+        SUBJECTO: 'Kush',
         TYPE: null,
         BORDERPRECISION: 1,
-        PARTOF: "Kush",
+        PARTOF: 'Kush',
       },
       geometry: {
-        type: "MultiPolygon",
+        type: 'MultiPolygon',
         coordinates: [
           [
             [
@@ -246,17 +246,17 @@ var bronzeAgeGeoJSON = {
       },
     },
     {
-      type: "Feature",
+      type: 'Feature',
       properties: {
-        NAME: "Assyria",
-        ABBREVN: "Assyria",
-        SUBJECTO: "Assyria",
+        NAME: 'Assyria',
+        ABBREVN: 'Assyria',
+        SUBJECTO: 'Assyria',
         TYPE: null,
         BORDERPRECISION: 1,
-        PARTOF: "Assyria",
+        PARTOF: 'Assyria',
       },
       geometry: {
-        type: "MultiPolygon",
+        type: 'MultiPolygon',
         coordinates: [
           [
             [
@@ -278,17 +278,17 @@ var bronzeAgeGeoJSON = {
       },
     },
     {
-      type: "Feature",
+      type: 'Feature',
       properties: {
-        NAME: "Babylonia",
-        ABBREVN: "Babylonia",
-        SUBJECTO: "Babylonia",
+        NAME: 'Babylonia',
+        ABBREVN: 'Babylonia',
+        SUBJECTO: 'Babylonia',
         TYPE: null,
         BORDERPRECISION: 1,
-        PARTOF: "Babylonia",
+        PARTOF: 'Babylonia',
       },
       geometry: {
-        type: "MultiPolygon",
+        type: 'MultiPolygon',
         coordinates: [
           [
             [
@@ -307,17 +307,17 @@ var bronzeAgeGeoJSON = {
       },
     },
     {
-      type: "Feature",
+      type: 'Feature',
       properties: {
-        NAME: "Hittites",
-        ABBREVN: "Hittites",
-        SUBJECTO: "Hittites",
+        NAME: 'Hittites',
+        ABBREVN: 'Hittites',
+        SUBJECTO: 'Hittites',
         TYPE: null,
         BORDERPRECISION: 1,
-        PARTOF: "Hittites",
+        PARTOF: 'Hittites',
       },
       geometry: {
-        type: "MultiPolygon",
+        type: 'MultiPolygon',
         coordinates: [
           [
             [
@@ -424,17 +424,17 @@ var bronzeAgeGeoJSON = {
       },
     },
     {
-      type: "Feature",
+      type: 'Feature',
       properties: {
-        NAME: "Arameans",
-        ABBREVN: "Arameans",
-        SUBJECTO: "Arameans",
+        NAME: 'Arameans',
+        ABBREVN: 'Arameans',
+        SUBJECTO: 'Arameans',
         TYPE: null,
         BORDERPRECISION: 1,
-        PARTOF: "Arameans",
+        PARTOF: 'Arameans',
       },
       geometry: {
-        type: "MultiPolygon",
+        type: 'MultiPolygon',
         coordinates: [
           [
             [
@@ -504,117 +504,117 @@ var bronzeAgeGeoJSON = {
 
 var factionStyle = {
   Hittites: {
-    color: "#D85A30",
-    label: "Хеттское царство",
-    note: "Прямое хеттское правление, ассимиляция Кемета шла отсюда.",
+    color: '#D85A30',
+    label: 'Хеттское царство',
+    note: 'Прямое хеттское правление, ассимиляция Кемета шла отсюда.',
   },
   Egypt: {
-    color: "#1D9E75",
-    label: "Кемет (Египет)",
-    note: "Провинция Хеттской империи.",
+    color: '#1D9E75',
+    label: 'Кемет (Египет)',
+    note: 'Провинция Хеттской империи.',
   },
   Assyria: {
-    color: "#E24B4A",
-    label: "Ассирия",
-    note: "Двигатель антихеттской коалиции.",
+    color: '#E24B4A',
+    label: 'Ассирия',
+    note: 'Двигатель антихеттской коалиции.',
   },
   Babylonia: {
-    color: "#BA7517",
-    label: "Вавилония",
-    note: "Ненадёжный союзник Ассирии в коалиции.",
+    color: '#BA7517',
+    label: 'Вавилония',
+    note: 'Ненадёжный союзник Ассирии в коалиции.',
   },
   Elam: {
-    color: "#7F77DD",
-    label: "Элам",
-    note: "Язык-изолят, свои торговые интересы в коалиции.",
+    color: '#7F77DD',
+    label: 'Элам',
+    note: 'Язык-изолят, свои торговые интересы в коалиции.',
   },
   Kush: {
-    color: "#888780",
-    label: "Куш (Нубия)",
-    note: "Периферия, набеги на южный Кемет.",
+    color: '#888780',
+    label: 'Куш (Нубия)',
+    note: 'Периферия, набеги на южный Кемет.',
   },
-  "Kingdom of David and Solomon": {
-    color: "#D4537E",
-    label: "Ханаан (Левант, юг)",
-    note: "Плотно контролируемый египетский вассал.",
+  'Kingdom of David and Solomon': {
+    color: '#D4537E',
+    label: 'Ханаан (Левант, юг)',
+    note: 'Плотно контролируемый египетский вассал.',
   },
   Arameans: {
-    color: "#28934b",
-    label: "Сев. Сирия / Левант",
-    note: "Зона вассалитета между Хатти и Ассирией.",
+    color: '#28934b',
+    label: 'Сев. Сирия / Левант',
+    note: 'Зона вассалитета между Хатти и Ассирией.',
   },
 }
 
 var cities = [
   {
-    name: "Хаттуса",
-    note: "Столица Хатти, придворный несийский язык",
+    name: 'Хаттуса',
+    note: 'Столица Хатти, придворный несийский язык',
     coords: [40.0159, 34.6154],
   },
   {
-    name: "Кархемиш",
-    note: "Прямое хеттское владение, узел торговли и языков",
+    name: 'Кархемиш',
+    note: 'Прямое хеттское владение, узел торговли и языков',
     coords: [36.8296, 38.0164],
   },
   {
-    name: "Алеппо",
-    note: "Культ Тешуба, северная Сирия",
+    name: 'Алеппо',
+    note: 'Культ Тешуба, северная Сирия',
     coords: [36.2021, 37.1343],
   },
   {
-    name: "Угарит",
-    note: "Торговый узел, алфавитная клинопись",
+    name: 'Угарит',
+    note: 'Торговый узел, алфавитная клинопись',
     coords: [35.6021, 35.785],
   },
   {
-    name: "Библ",
-    note: "Финикийский вассальный порт",
+    name: 'Библ',
+    note: 'Финикийский вассальный порт',
     coords: [34.1235, 35.6534],
   },
   {
-    name: "Тир",
-    note: "Финикийский вассальный порт",
+    name: 'Тир',
+    note: 'Финикийский вассальный порт',
     coords: [33.27, 35.1968],
   },
   {
-    name: "Мегиддо",
-    note: "Ханаан, плотный египетский контроль",
+    name: 'Мегиддо',
+    note: 'Ханаан, плотный египетский контроль',
     coords: [32.5785, 35.1806],
   },
-  { name: "Ниневия", note: "Ассирия, север", coords: [36.3607, 43.1575] },
+  { name: 'Ниневия', note: 'Ассирия, север', coords: [36.3607, 43.1575] },
   {
-    name: "Ашшур",
-    note: "Столица Ассирии, двигатель коалиции",
+    name: 'Ашшур',
+    note: 'Столица Ассирии, двигатель коалиции',
     coords: [35.4564, 43.2594],
   },
   {
-    name: "Вавилон",
-    note: "Столица Вавилонии, ненадежный союзник Ассирии",
+    name: 'Вавилон',
+    note: 'Столица Вавилонии, ненадежный союзник Ассирии',
     coords: [32.5419, 44.4209],
   },
   {
-    name: "Сузы",
-    note: "Столица Элама, язык-изолят",
+    name: 'Сузы',
+    note: 'Столица Элама, язык-изолят',
     coords: [32.1909, 48.2556],
   },
   {
-    name: "Мемфис",
-    note: "Кемет, административный центр",
+    name: 'Мемфис',
+    note: 'Кемет, административный центр',
     coords: [29.8495, 31.2543],
   },
   {
-    name: "Гелиополь",
-    note: "Кемет, культ Ра",
+    name: 'Гелиополь',
+    note: 'Кемет, культ Ра',
     coords: [30.1294, 31.3076],
   },
   {
-    name: "Фивы (Карнак)",
-    note: "Кемет, южная столица, культ Амона",
+    name: 'Фивы (Карнак)',
+    note: 'Кемет, южная столица, культ Амона',
     coords: [25.7188, 32.6573],
   },
-  { 
-    name: "Хинис", 
-    note: "Портовый город, торговый узел", 
-    coords: [31.2001, 29.9187], 
+  {
+    name: 'Хинис',
+    note: 'Портовый город, торговый узел',
+    coords: [31.2001, 29.9187],
   },
 ]
