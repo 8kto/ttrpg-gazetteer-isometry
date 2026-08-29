@@ -21,7 +21,7 @@ table thead th {
 
 table thead th:first-of-type,
 table tbody td:first-of-type {
-  @apply text-center;
+  @apply text-left;
 }
 
 table tr {
