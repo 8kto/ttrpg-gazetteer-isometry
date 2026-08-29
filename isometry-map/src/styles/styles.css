@@ -1,0 +1,100 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+#map {
+  width: 100%;
+  height: 100vh;
+}
+.legend {
+  background: white;
+  padding: 10px 14px;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  font-size: 13px;
+  line-height: 1.6;
+  max-width: 240px;
+}
+.legend button.legend-item,
+.legend button.legend-group-button {
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: transparent;
+  padding: 4px 0;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.legend button.legend-group-button {
+  font-weight: 700;
+  padding: 6px 0;
+  margin-bottom: 2px;
+}
+.legend button.legend-item:hover,
+.legend button.legend-group-button:hover {
+  color: #0a5f9f;
+}
+.legend button.legend-group-button.active {
+  color: #0a5f9f;
+  text-decoration: underline;
+}
+.legend .legend-group-buttons {
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e2e2e2;
+}
+.legend .swatch {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+.legend .note {
+  margin-top: 6px;
+  font-size: 11px;
+  color: #555;
+}
+.popup-note {
+  font-size: 12px;
+  color: #444;
+}
+
+.map-label {
+  border: none;
+  color: #222;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.country-label {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.city-label {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 4px;
+  padding: 3px 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.leaflet-tooltip.map-label:before {
+  border-top-color: transparent;
+}
+
+.leaflet-tooltip.city-label:before {
+  border-top-color: rgba(255, 255, 255, 0.95);
+}
