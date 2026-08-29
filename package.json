@@ -12,6 +12,8 @@
     "build": "task build",
     "build:styles": "task styles",
     "dev": "npx http-server ./build/chunks-html -p 3001 --cors",
+    "deploy": "bash scripts/deploy-gazette.sh",
+    "deploy:map": "bash scripts/deploy-map.sh",
     "format": "prettier . --check",
     "format:fix": "eslint . --ext .js,.mjs,.cjs,.ts,.d.ts --fix && prettier --write .",
     "lint": "eslint . --ext .js,.mjs,.cjs,.ts,.d.ts",
