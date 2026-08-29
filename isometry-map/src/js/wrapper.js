@@ -6,10 +6,21 @@ var map = L.map('map', {
   zoomDelta: 0.5,
 }).setView([32.5, 38.5], 5)
 
-L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png', {
-  maxZoom: 20,
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-}).addTo(map)
+L.tileLayer(
+  'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+  {
+    maxZoom: 16,
+    attribution:
+      'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+  },
+).addTo(map)
+
+L.tileLayer(
+  'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}',
+  {
+    maxZoom: 16,
+  },
+).addTo(map)
 
 var activeHighlight = null
 var activeHighlightKey = null
