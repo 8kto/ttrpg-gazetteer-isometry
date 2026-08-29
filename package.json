@@ -15,7 +15,7 @@
     "deploy": "bash scripts/deploy-gazette.sh",
     "deploy:map": "bash scripts/deploy-map.sh",
     "format": "prettier . --check",
-    "format:fix": "eslint . --ext .js,.mjs,.cjs,.ts,.d.ts --fix && prettier --write .",
+    "format:fix": "eslint . --ext .js,.mjs,.cjs,.ts,.d.ts --fix; prettier --write .",
     "lint": "eslint . --ext .js,.mjs,.cjs,.ts,.d.ts",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "watch:styles": "yarn build:styles --watch"
