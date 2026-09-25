@@ -12,8 +12,8 @@ $gc src/markdown/*stats* -m 'Extend monsters refs'
 $gc src/markdown/\$* -m 'Update notes and non-reader texts'
 $gc src/markdown/*appendix* -m 'Update appendices'
 
-$ga src/markdown/*.md
-$gc -m 'Extend rooms'
+$ga src/markdown/
+$gc -m 'Update pages'
 
 $gc src/styles/*.css -m 'Update styles'
 $gc src/html/* -m 'Update layout files'
