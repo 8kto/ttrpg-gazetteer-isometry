@@ -10,6 +10,8 @@
     "clean": "task clean",
     "clean:release": "task clean:release",
     "build": "task build",
+    "build:main": "task build -- main",
+    "build:ref": "task build -- referee",
     "build:styles": "task styles",
     "dev": "npx http-server ./build/chunks-html -p 3001 --cors",
     "deploy": "bash scripts/deploy-gazette.sh",
