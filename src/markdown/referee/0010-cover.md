@@ -1,5 +1,5 @@
 ---
-template: cover.html
+template: cover-referee.html
 ---
 
 # Hidden content

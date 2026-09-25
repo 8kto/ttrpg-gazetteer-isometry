@@ -1,5 +1,5 @@
 ---
-template: title.html
+template: title-referee.html
 use:
   - version
 ---
