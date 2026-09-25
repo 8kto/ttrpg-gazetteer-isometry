@@ -17,8 +17,9 @@ const tocOverrides = {
 }
 
 /** @type {Partial<IDocumentConfig>} */
-const mainModuleConf = {
+const playerBookConf = {
   id: 'main',
+  markdownPath: 'src/markdown/player',
   documentTitle: 'Зловещая Изометрия: газетир',
   documentFileName: 'Зловещая Изометрия: газетир ({{version}}).pdf',
   header: 'Зловещая Изометрия: газетир',
@@ -26,6 +27,35 @@ const mainModuleConf = {
   backCoverHtmlFile: '9999-back-cover.md',
   include: [],
   skipped: ['0500-rumors.md', '0200-desert.md', '1500-names.md'],
+  tocConfig: {
+    headersSelector: 'h1:not([data-skip-toc]), h2:not([data-skip-toc]), h3, h4, h5',
+    rootClassName: 'toc--main',
+    renderMaxLevel: 2,
+  },
+  tocOverrides: tocOverrides,
+  bookmarksConfig: {
+    config: 'build/$toc-main.json',
+    skipFirstPages: 3,
+    skipLastPages: 1,
+  },
+  buildPartSize: 8,
+  buildProcessesNum: 1,
+  skipHeaderAndFooter: [-1, 1, 2, 3],
+  skipFooter: [],
+  macros: [],
+}
+
+/** @type {Partial<IDocumentConfig>} */
+const refereeBookConf = {
+  id: 'referee',
+  markdownPath: 'src/markdown/referee',
+  documentTitle: 'Ночь в Хинисе',
+  documentFileName: 'Ночь в Хинисе ({{version}}).pdf',
+  header: 'Ночь в Хинисе: рефери',
+  coverHtmlFile: '0010-cover.md',
+  backCoverHtmlFile: '9999-back-cover.md',
+  include: [],
+  skipped: [],
   tocConfig: {
     headersSelector: 'h1:not([data-skip-toc]), h2:not([data-skip-toc]), h3, h4, h5',
     rootClassName: 'toc--main',
@@ -63,7 +93,7 @@ const config = {
     rootId: 'toc-main',
   },
   skipHeaderAndFooter: [1, -1],
-  documents: [/** @type {IDocumentConfig} */ (mainModuleConf)],
+  documents: [playerBookConf, refereeBookConf],
 }
 
 export default config
