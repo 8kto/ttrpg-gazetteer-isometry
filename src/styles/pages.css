@@ -17,3 +17,24 @@
     color: #333;
   }
 }
+
+.page-name--equip {
+  table {
+    break-inside: auto;
+  }
+}
+
+.page-name--names {
+  .content {
+    /*column-count: 2;*/
+  }
+
+  .room-section {
+    & > p,
+    & > h1,
+    & > h2,
+    & > h3 {
+      column-span: all;
+    }
+  }
+}

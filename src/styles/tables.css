@@ -6,6 +6,8 @@ table {
   @apply mb-4;
   color: #333;
   font-family: var(--font-regular-condensed);
+
+  break-inside: avoid;
 }
 
 table thead th {

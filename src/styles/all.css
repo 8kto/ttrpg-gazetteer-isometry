@@ -41,11 +41,11 @@ h2 {
 
 h3 {
   @apply text-lg;
-  @apply mb-1 mt-3;
+  @apply mb-1 mt-4;
   @apply font-semibold;
   border-color: var(--color-primary);
   line-height: 1.25rem;
-  color: var(--color-secondary);
+  color: var(--color-accent);
 }
 
 h3:has(+ .list-to-table--converted) {
