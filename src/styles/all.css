@@ -354,6 +354,19 @@ ul li::before {
   transform: rotate(-180deg);
 }
 
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--font-regular-condensed);
+  color: var(--color-primary);
+}
+
+.content code {
+  break-inside: avoid;
+  text-wrap: nowrap;
+}
+
 .doc-toc a {
   border-bottom: none;
 }
