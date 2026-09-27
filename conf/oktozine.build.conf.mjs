@@ -4,7 +4,7 @@
 const mainTocConf = {
   dropLabels: ['Зловещая Изометрия: газетир', 'Содержание'],
   dropItemsFromLabels: ['Благодарности и техническая информация'],
-  alwaysInclude: [],
+  alwaysInclude: ['Имена народов сеттинга'],
 }
 
 /** @type {ITocOverrides} */
